@@ -1,0 +1,8 @@
+{
+    "$schema": "../../../../../../TcHmiServer/TcHmiSrv/schema/Language.Schema.json",
+    "locale": "de",
+    "localizedText": {
+        "Error_Dialog_Load_View_Insufficient_Access": "Keine Berechtigung zur Anzeige der View: '{0}'.<br />\n<br />\n<input type=\"submit\" value=\"Ausloggen\" style=\"padding:10px;\" onclick=\"window.location = '/Logout?Location={1}'\">",
+        "Error_Dialog_Load_View_Insufficient_Access_User_Details": "Keine Berechtigung zur Anzeige der View: '{0}' für Benutzer <span style=\"cursor:help;border-bottom:lightgray dotted 2px;\" title=\"Gruppenzugehörigkeit: {2}\nAuthorisoert von {3} in der Session:\n{4}'\">{5}</span>.<br />\n<br />\n<input type=\"submit\" value=\"Ausloggen\" style=\"padding:10px;\" onclick=\"window.location = '/Logout?Location={1}'\">"
+    }
+}

@@ -1,0 +1,100 @@
+/* Theme dependend control CSS*/
+/*Base-Dark Theme*/
+.TcHmi_Controls_Beckhoff_TcHmiUserManagement,
+.TcHmi_Controls_Beckhoff_TcHmiUserManagement-Dropdown,
+.TcHmi_Controls_Beckhoff_TcHmiUserManagement-template-popup {
+    --tchmi-background: #1b1b1f;
+    --tchmi-background-pressed: #1b1b1f;
+    --tchmi-text-color: #FFFFFF;
+    --tchmi-text-color-pressed: #E4E9ED;
+    --tchmi-button-background: linear-gradient(135deg, rgb(73, 148, 218) 0%, rgb(65, 98, 176));
+    --tchmi-button-background-pressed: linear-gradient(135deg, rgb(65, 98, 176) 0%, rgb(73, 148, 218) 100%);
+    --tchmi-arrow-stroke: #FFFFFF;
+    --tchmi-arrow-stroke-pressed: #FFFFFF;
+    --tchmi-popup-background: #1b1b1f;
+    --tchmi-popup-color: #FFFFFF;
+    --tchmi-popup-cancel-color: rgb(227, 6, 19);
+    --tchmi-popup-shadow: rgba(89,89,89,0.75);
+    --tchmi-dropdown-background: #2b2b2c;
+    --tchmi-dropdown-background-hover: #4794da;
+    --tchmi-dropdown-text-color: #FFFFFF;
+    --tchmi-dropdown-text-color-hover: #FFFFFF;
+}
+
+.TcHmi_Controls_Beckhoff_TcHmiUserManagement {
+    background: var(--tchmi-background);
+}
+
+    .TcHmi_Controls_Beckhoff_TcHmiUserManagement .TcHmi_Controls_Beckhoff_TcHmiUserManagement-Template .TcHmi_Controls_Beckhoff_TcHmiUserManagement-button {
+        stroke: var(--tchmi-arrow-stroke);
+        background: var(--tchmi-button-background);
+    }
+
+    .TcHmi_Controls_Beckhoff_TcHmiUserManagement.down {
+        background: var(--tchmi-background-pressed);
+    }
+
+        .TcHmi_Controls_Beckhoff_TcHmiUserManagement.down .TcHmi_Controls_Beckhoff_TcHmiUserManagement-Template .TcHmi_Controls_Beckhoff_TcHmiUserManagement-button {
+            stroke: var(--tchmi-arrow-stroke-pressed);
+            background: var(--tchmi-button-background-pressed);
+        }
+
+    .TcHmi_Controls_Beckhoff_TcHmiUserManagement .TcHmi_Controls_Beckhoff_TcHmiUserManagement-Base {
+        color: var(--tchmi-text-color);
+    }
+
+    .TcHmi_Controls_Beckhoff_TcHmiUserManagement.down .TcHmi_Controls_Beckhoff_TcHmiUserManagement-Base {
+        color: var(--tchmi-text-color-pressed);
+    }
+
+.TcHmi_Controls_Beckhoff_TcHmiUserManagement-template-popup {
+    background: var(--tchmi-popup-background);
+    color: var(--tchmi-popup-color);
+    box-shadow: 0px 0px 6px 1px var(--tchmi-popup-shadow);
+}
+
+    .TcHmi_Controls_Beckhoff_TcHmiUserManagement-template-popup svg {
+        stroke: var(--tchmi-popup-color);
+    }
+
+.TcHmi_Controls_Beckhoff_TcHmiUserManagement-template-popup-header-x.down {
+    background: var(--tchmi-popup-cancel-color);
+}
+
+.TcHmi_Controls_Beckhoff_TcHmiUserManagement-Dropdown {
+    background: var(--tchmi-dropdown-background);
+    box-shadow: inset -7px 0px 6px -7px rgba(0,0,0,0.6), inset 7px 0px 6px -7px rgba(0,0,0,0.6), inset 0px -7px 6px -7px rgba(0,0,0,0.6);
+}
+
+.TcHmi_Controls_Beckhoff_TcHmiUserManagement-Dropdown.above-control {
+    box-shadow: inset -7px 0px 6px -7px rgba(0,0,0,0.6), inset 7px 0px 6px -7px rgba(0,0,0,0.6), inset 0px 7px 6px -7px rgba(0,0,0,0.6);
+}
+
+    .TcHmi_Controls_Beckhoff_TcHmiUserManagement-template-Dropdown-Element {
+        color: var(--tchmi-dropdown-text-color);
+    }
+
+    .TcHmi_Controls_Beckhoff_TcHmiUserManagement-template-Dropdown-Element:hover {
+        background: var(--tchmi-dropdown-background-hover);
+        color: var(--tchmi-dropdown-text-color-hover);
+    }
+
+.TcHmi_Controls_Beckhoff_TcHmiUserManagement {
+    box-shadow: rgba(0, 0, 0, 0.208) 1px 1px 2px 0px;
+}
+
+.TcHmi_Controls_Beckhoff_TcHmiUserManagement-button {
+    width: 48px;
+}
+
+.TcHmi_Controls_Beckhoff_TcHmiUserManagement-template-popup-groups[data-scroll='top'] {
+    box-shadow: inset 0 -5px 10px 0 rgba(221, 221, 221, 0.05);
+}
+
+.TcHmi_Controls_Beckhoff_TcHmiUserManagement-template-popup-groups[data-scroll='center'] {
+    box-shadow: inset 0 5px 10px 0 rgba(221, 221, 221, 0.05), inset 0 -5px 5px 0 rgba(221, 221, 221, 0.05);
+}
+
+.TcHmi_Controls_Beckhoff_TcHmiUserManagement-template-popup-groups[data-scroll='bottom'] {
+    box-shadow: inset 0 5px 10px 0 rgba(221, 221, 221, 0.05);
+}

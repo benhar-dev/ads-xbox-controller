@@ -1,0 +1,8 @@
+{
+    "$schema": "../../../../TcHmiServer/TcHmiSrv/schema/Language.Schema.json",
+    "locale": "en",
+    "localizedText": {
+        "ValueFormat": "Wrong value format. The value must conform to the ISO 8601 standard.",
+        "ValueEmpty": "No value entered."
+    }
+}

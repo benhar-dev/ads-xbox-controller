@@ -1,0 +1,63 @@
+/** Styles for all themes */
+
+/* Style for the main element */
+.TcHmi_Controls_Beckhoff_TcHmiHorizontalBarChart {
+    /* Prevent overflow if the border radius is huge */
+    overflow: hidden;
+}
+
+.TcHmi_Controls_Beckhoff_TcHmiHorizontalBarChart-template {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: auto min-content;
+}
+
+.TcHmi_Controls_Beckhoff_TcHmiHorizontalBarChart-template-chart {
+    position: relative;
+    top: 0px;
+    margin: 5px;
+}
+
+.TcHmi_Controls_Beckhoff_TcHmiHorizontalBarChart-template-legend {
+    position: relative;
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 5px;
+    margin-top: 0px;
+}
+
+.TcHmi_Controls_Beckhoff_TcHmiHorizontalBarChart-template-legend-bottom {
+    bottom: 0px;
+    left: 0px;
+}
+
+.TcHmi_Controls_Beckhoff_TcHmiHorizontalBarChart-template-legend-parent-element {
+    position: relative;
+    float: left;
+}
+
+.TcHmi_Controls_Beckhoff_TcHmiHorizontalBarChart-template-legend-checkbox {
+    position: relative;
+    vertical-align: middle;
+    float: left;
+    margin: 3px;
+    width: 13px;
+    height: 13px;
+}
+
+.TcHmi_Controls_Beckhoff_TcHmiHorizontalBarChart-template-legend-checkbox-color-element {
+    position: relative;
+    float: left;
+    height: 2px;
+    width: 10px;
+    top: 8.5px;
+    margin-right: 5px;
+}
+
+.TcHmi_Controls_Beckhoff_TcHmiHorizontalBarChart-template-legend-checkbox-label {
+    position: relative;
+    float: left;
+    padding-right: 10px;
+}

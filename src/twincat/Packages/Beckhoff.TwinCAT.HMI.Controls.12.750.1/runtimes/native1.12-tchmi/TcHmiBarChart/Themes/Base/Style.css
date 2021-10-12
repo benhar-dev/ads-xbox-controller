@@ -1,0 +1,24 @@
+/** Styles for the theme: Base */
+
+/* Style for the main element */
+.TcHmi_Controls_Beckhoff_TcHmiBarChart, .tchmi-bar-chart {
+    --tchmi-background: #D7D7D9;
+    --tchmi-template-background: transparent;
+
+    background: var(--tchmi-barchart-background);
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.6);
+}
+
+.TcHmi_Controls_Beckhoff_TcHmiBarChart-template, .tchmi-bar-chart-template {
+    background: var(--tchmi-template-background);
+}
+
+.TcHmi_Controls_Beckhoff_TcHmiBarChart-template-chart,
+.tchmi-bar-chart-template-chart {
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.TcHmi_Controls_Beckhoff_TcHmiBarChart-template-legend {
+    background: rgba(255, 255, 255, 0.5);
+    color: #4794da;
+}

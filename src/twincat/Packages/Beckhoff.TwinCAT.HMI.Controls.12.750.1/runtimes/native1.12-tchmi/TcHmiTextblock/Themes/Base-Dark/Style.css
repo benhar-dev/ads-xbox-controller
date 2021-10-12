@@ -1,0 +1,8 @@
+/** Styles for the theme: Base-Dark */
+
+/* Style for the main element */
+.TcHmi_Controls_Beckhoff_TcHmiTextblock,
+.tchmi-textblock {
+    --tchmi-color: #ffffff;
+    color: var(--tchmi-color);
+}

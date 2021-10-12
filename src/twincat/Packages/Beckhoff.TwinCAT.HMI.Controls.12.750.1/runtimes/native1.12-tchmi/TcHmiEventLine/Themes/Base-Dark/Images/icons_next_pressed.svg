@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.4, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="pfade" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="30px" height="30px" viewBox="0 0 30 30" enable-background="new 0 0 30 30" xml:space="preserve">
+    <g id="hintergrund">
+	    <g>
+		
+		    <linearGradient id="SVGID_1_" gradientTransform="rotate(45)">
+		        <stop offset="0%" style="stop-color:#4162b0"/>
+		        <stop offset="100%" style="stop-color:#4994da"/>
+		    </linearGradient>
+		    <rect x="0" y="0" fill="url(#SVGID_1_)" width="30" height="30"/>
+	    </g>
+    </g>
+    <g id="pfade">
+        <polyline fill="none" stroke="#ffffff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+	    12,6.75 20,15 12,23.25 "/>
+    </g>
+</svg>

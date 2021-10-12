@@ -1,0 +1,15 @@
+{
+    "$schema": "../../../../TcHmiServer/TcHmiSrv/schema/Language.Schema.json",
+    "locale": "de",
+    "localizedText": {
+        "Label_Text_Years": "Jahre",
+        "Label_Text_Months": "Monate",
+        "Label_Text_Days": "Tage",
+        "Label_Text_Hours": "Stunden",
+        "Label_Text_Minutes": "Minuten",
+        "Label_Text_Seconds": "Sekunden",
+        "Label_Text_Milliseconds": "Millisekunden",
+        "Button_Text_Ok": "OK",
+        "Button_Text_Cancel": "Abbrechen"
+    }
+}

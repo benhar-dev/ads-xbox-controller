@@ -1,0 +1,42 @@
+/** Styles for the theme: Base-Dark */
+.TcHmi_Controls_Beckhoff_TcHmiTachometer {
+    --tchmi-background: #1b1b1f;
+    --tchmi-tick-stroke: #ffffff;
+    --tchmi-label-fill: #ffffff;
+    --tchmi-unit-color: #ffffff;
+    --tchmi-needle-base-color: #4794da;
+    --tchmi-needle-pointer-color: #4794da;
+}
+
+.TcHmi_Controls_Beckhoff_TcHmiTachometer-template-circle-outside{
+    fill: var(--tchmi-background);
+}
+
+.TcHmi_Controls_Beckhoff_TcHmiTachometer-template-main-tick,
+.TcHmi_Controls_Beckhoff_TcHmiTachometer-template-sub-tick {
+    stroke: var(--tchmi-tick-stroke);
+    stroke-width: 2;
+    pointer-events: none;
+}
+
+.TcHmi_Controls_Beckhoff_TcHmiTachometer-template-label{
+    font-size: 12px;
+    fill: var(--tchmi-label-fill);
+    font-weight: bold;
+}
+
+.TcHmi_Controls_Beckhoff_TcHmiTachometer-template-display-value, .TcHmi_Controls_Beckhoff_TcHmiTachometer-template-display-unit{
+    fill: var(--tchmi-unit-color);
+}
+
+.TcHmi_Controls_Beckhoff_TcHmiTachometer-template-needle-pointer {
+    stroke: var(--tchmi-needle-pointer-color);
+    fill: none;
+    stroke-width: 2px;
+    stroke-linecap: round;
+}
+
+.TcHmi_Controls_Beckhoff_TcHmiTachometer-template-needle-base {
+    fill: var(--tchmi-needle-base-color);
+    stroke: none;
+}

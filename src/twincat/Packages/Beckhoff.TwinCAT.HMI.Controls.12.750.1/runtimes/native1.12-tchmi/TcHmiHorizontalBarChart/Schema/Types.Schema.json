@@ -1,0 +1,121 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema",
+    "definitions": {
+        "ChartBarGraphColorList": {
+            "$ref": "tchmi:framework#/definitions/TcHmi.Controls.Beckhoff.TcHmiHorizontalBarChart.ChartBarGraphColorList"
+        },
+        "ChartBarGraphDataDefinitionList": {
+            "$ref": "tchmi:framework#/definitions/TcHmi.Controls.Beckhoff.TcHmiHorizontalBarChart.ChartBarGraphDataDefinitionList"
+        },
+        "ChartBarGraphPosition": {
+            "$ref": "tchmi:framework#/definitions/TcHmi.Controls.Beckhoff.TcHmiHorizontalBarChart.ChartBarGraphPosition"
+        },
+        "TcHmi.Controls.Beckhoff.TcHmiHorizontalBarChart": {
+            "$schema": "http://json-schema.org/draft-04/schema",
+            "type": "object",
+            "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
+            "frameworkControlType": "TcHmiHorizontalBarChart",
+            "frameworkControlNamespace": "TcHmi.Controls.Beckhoff"
+        },
+        "TcHmi.Controls.Beckhoff.TcHmiHorizontalBarChart.ChartBarGraphColorList": {
+            "title": "ChartBarGraphColorList",
+            "engineeringDefaultDatatype": 0,
+            "anyOf": [
+                {
+                    "type": "array",
+                    "items": {
+                        "$ref": "tchmi:framework#/definitions/SolidColor"
+                    }
+                },
+                {
+                    "$ref": "tchmi:framework#/definitions/SolidColor"
+                }
+            ]
+        },
+        "TcHmi.Controls.Beckhoff.TcHmiHorizontalBarChart.ChartBarGraphDataDefinitionList": {
+            "title": "ChartBarGraphDataDefinitionList",
+            "engineeringDefaultDatatype": 0,
+            "anyOf": [
+                {
+                    "type": "array",
+                    "title": "Array<Array<number>>",
+                    "items": {
+                        "type": "array",
+                        "items": {
+                            "type": "number"
+                        }
+                    }
+                },
+                {
+                    "type": "array",
+                    "title": "Array<number>",
+                    "items": {
+                        "type": "number"
+                    }
+                }
+            ]
+        },
+        "TcHmi.Controls.Beckhoff.TcHmiHorizontalBarChart.ChartBarGraphPosition": {
+            "title": "ChartBarGraphPosition",
+            "type": "string",
+            "enum": [
+                "Left",
+                "Right"
+            ],
+            "default": "Left"
+        },
+        "TcHmi.Controls.Beckhoff.TcHmiHorizontalBarChart.ChartBarGraphArrangement": {
+            "title": "ChartBarGraphArrangement",
+            "type": "string",
+            "enum": [
+                "Overlapped",
+                "Clustered"
+            ],
+            "default": "Overlapped"
+        },
+        "TcHmi.Controls.Beckhoff.TcHmiHorizontalBarChart.ChartBarGraphDescriptionDefinitionList": {
+            "title": "ChartBarGraphDescriptionDefinitionList",
+            "type": "array",
+            "items": {
+                "type": "object",
+                "engineeringColumns": [
+                    "legendName"
+                ],
+                "propertiesMeta": [
+                    {
+                        "name": "barColor",
+                        "displayName": "Bar color",
+                        "category": "Colors",
+                        "displayPriority": 10,
+                        "description": "Color for this bars",
+                        "defaultValue": {
+                            "color": "#4794da"
+                        },
+                        "defaultValueInternal": null
+                    },
+                    {
+                        "name": "legendName",
+                        "category": "General",
+                        "displayName": "Legend name",
+                        "displayPriority": 10,
+                        "description": "The name that is displayed in the legend.",
+                        "defaultValue": null,
+                        "defaultValueInternal": null
+                    }
+                ],
+                "properties": {
+                    "barColor": {
+                        "$ref": "tchmi:framework#/definitions/SolidColor"
+                    },
+                    "legendName": {
+                        "type": "string"
+                    }
+                },
+                "required": []
+            }
+        },
+        "TcHmiHorizontalBarChart": {
+            "$ref": "tchmi:framework#/definitions/TcHmi.Controls.Beckhoff.TcHmiHorizontalBarChart"
+        }
+    }
+}

@@ -1,0 +1,1080 @@
+﻿</div>
+<div id="Desktop" data-tchmi-type="TcHmi.Controls.System.TcHmiView" data-tchmi-top="0" data-tchmi-left="0" data-tchmi-width-mode="Content" data-tchmi-min-width="100" data-tchmi-min-width-unit="%" data-tchmi-height-mode="Content" data-tchmi-min-height="100" data-tchmi-min-height-unit="%" data-tchmi-left-unit="px" data-tchmi-top-unit="px" data-tchmi-right-unit="px" data-tchmi-bottom-unit="px" data-tchmi-width-unit="px" data-tchmi-height-unit="px" data-tchmi-max-width-unit="px" data-tchmi-max-height-unit="px">
+    <div id="TcHmi_Controls_Beckhoff_TcHmiImage" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiImage" data-tchmi-height="404" data-tchmi-height-unit="px" data-tchmi-left="24" data-tchmi-left-unit="px" data-tchmi-src="Images/Controller.png" data-tchmi-top="141" data-tchmi-top-unit="px" data-tchmi-width="655" data-tchmi-width-unit="px" data-tchmi-creator-locked="False" data-tchmi-right-unit="px" data-tchmi-bottom-unit="px" data-tchmi-max-width-unit="px" data-tchmi-max-height-unit="px" data-tchmi-min-width-unit="px" data-tchmi-min-height-unit="px" data-tchmi-background-image-width-unit="px" data-tchmi-background-image-height-unit="px">
+    </div>
+    <div id="TcHmiTextblock_ButtonX" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="26" data-tchmi-height-unit="px" data-tchmi-left="582" data-tchmi-left-unit="px" data-tchmi-text="ButtonX" data-tchmi-top="369" data-tchmi-top-unit="px" data-tchmi-width="92" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-right-unit="px" data-tchmi-bottom-unit="px" data-tchmi-text-font-size-unit="px" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-max-width-unit="px" data-tchmi-max-height-unit="px" data-tchmi-min-width-unit="px" data-tchmi-min-height-unit="px">
+
+        <script data-tchmi-target-attribute="data-tchmi-border-style" type="application/json">
+            {
+            "left": "Solid",
+            "right": "Solid",
+            "top": "Solid",
+            "bottom": "Solid"
+            }
+        </script>
+
+        <script data-tchmi-target-attribute="data-tchmi-border-width" type="application/json">
+            {
+            "left": 2,
+            "right": 2,
+            "top": 2,
+            "bottom": 2,
+            "leftUnit": "px",
+            "rightUnit": "px",
+            "topUnit": "px",
+            "bottomUnit": "px"
+            }
+        </script>
+
+        <script data-tchmi-target-attribute="data-tchmi-border-radius" type="application/json">
+            {
+            "topLeft": 5.0,
+            "topRight": 5.0,
+            "bottomLeft": 5.0,
+            "bottomRight": 5.0,
+            "topLeftUnit": "px",
+            "topRightUnit": "px",
+            "bottomLeftUnit": "px",
+            "bottomRightUnit": "px"
+            }
+        </script>
+
+        
+    
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+[
+  {
+    "event": "%s%PLC1.Global.controller::ButtonX%/s%",
+    "actions": [
+      {
+        "objectType": "Condition",
+        "active": true,
+        "parts": [
+          {
+            "if": [
+              {
+                "compare1": {
+                  "objectType": "Symbol",
+                  "valueType": "tchmi:general#/definitions/BOOL",
+                  "symbolExpression": "%s%PLC1.Global.controller::ButtonX%/s%"
+                },
+                "compare2": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:general#/definitions/BOOL",
+                  "value": true
+                },
+                "compareOperator": "==",
+                "logic": null
+              }
+            ],
+            "then": [
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%TcHmiTextblock_ButtonX::ClassNames%/ctrl%",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:framework#/definitions/ClassNameList",
+                  "value": [
+                    "IsActiveLabel"
+                  ]
+                },
+                "asyncWait": true
+              }
+            ]
+          },
+          {
+            "else": [
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%TcHmiTextblock_ButtonX::ClassNames%/ctrl%",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:framework#/definitions/ClassNameList",
+                  "value": [
+                    "IsNotActiveLabel"
+                  ]
+                },
+                "asyncWait": true
+              }
+            ]
+          }
+        ],
+        "asyncWait": true
+      }
+    ]
+  }
+]
+</script>
+</div>
+    <div id="TcHmiTextblock_ButtonB" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="26" data-tchmi-height-unit="px" data-tchmi-left="582" data-tchmi-left-unit="px" data-tchmi-text="ButtonB" data-tchmi-top="311" data-tchmi-top-unit="px" data-tchmi-width="92" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-right-unit="px" data-tchmi-bottom-unit="px" data-tchmi-text-font-size-unit="px" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-max-width-unit="px" data-tchmi-max-height-unit="px" data-tchmi-min-width-unit="px" data-tchmi-min-height-unit="px" data-tchmi-background-image-width-unit="px" data-tchmi-background-image-height-unit="px" data-tchmi-opacity="1">
+        <script data-tchmi-target-attribute="data-tchmi-border-style" type="application/json">
+            {
+            "left": "Solid",
+            "right": "Solid",
+            "top": "Solid",
+            "bottom": "Solid"
+            }
+        </script>
+
+        <script data-tchmi-target-attribute="data-tchmi-border-width" type="application/json">
+            {
+            "left": 2,
+            "right": 2,
+            "top": 2,
+            "bottom": 2,
+            "leftUnit": "px",
+            "rightUnit": "px",
+            "topUnit": "px",
+            "bottomUnit": "px"
+            }
+        </script>
+
+        <script data-tchmi-target-attribute="data-tchmi-border-radius" type="application/json">
+            {
+            "topLeft": 5.0,
+            "topRight": 5.0,
+            "bottomLeft": 5.0,
+            "bottomRight": 5.0,
+            "topLeftUnit": "px",
+            "topRightUnit": "px",
+            "bottomLeftUnit": "px",
+            "bottomRightUnit": "px"
+            }
+        </script>
+
+        
+    
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+[
+  {
+    "event": "%s%PLC1.Global.controller::ButtonB%/s%",
+    "actions": [
+      {
+        "objectType": "Condition",
+        "active": true,
+        "parts": [
+          {
+            "if": [
+              {
+                "compare1": {
+                  "objectType": "Symbol",
+                  "valueType": "tchmi:general#/definitions/BOOL",
+                  "symbolExpression": "%s%PLC1.Global.controller::ButtonB%/s%"
+                },
+                "compare2": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:general#/definitions/BOOL",
+                  "value": true
+                },
+                "compareOperator": "==",
+                "logic": null
+              }
+            ],
+            "then": [
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%TcHmiTextblock_ButtonB::ClassNames%/ctrl%",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:framework#/definitions/ClassNameList",
+                  "value": [
+                    "IsActiveLabel"
+                  ]
+                },
+                "asyncWait": true
+              }
+            ]
+          },
+          {
+            "else": [
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%TcHmiTextblock_ButtonB::ClassNames%/ctrl%",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:framework#/definitions/ClassNameList",
+                  "value": [
+                    "IsNotActiveLabel"
+                  ]
+                },
+                "asyncWait": true
+              }
+            ]
+          }
+        ],
+        "asyncWait": true
+      }
+    ]
+  }
+]
+</script>
+</div>
+    <div id="TcHmiTextblock_ButtonY" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="26" data-tchmi-height-unit="px" data-tchmi-left="566" data-tchmi-left-unit="px" data-tchmi-text="ButtonY" data-tchmi-top="267" data-tchmi-top-unit="px" data-tchmi-width="92" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-right-unit="px" data-tchmi-bottom-unit="px" data-tchmi-text-font-size-unit="px" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-max-width-unit="px" data-tchmi-max-height-unit="px" data-tchmi-min-width-unit="px" data-tchmi-min-height-unit="px">
+        <script data-tchmi-target-attribute="data-tchmi-border-style" type="application/json">
+            {
+            "left": "Solid",
+            "right": "Solid",
+            "top": "Solid",
+            "bottom": "Solid"
+            }
+        </script>
+
+        <script data-tchmi-target-attribute="data-tchmi-border-width" type="application/json">
+            {
+            "left": 2,
+            "right": 2,
+            "top": 2,
+            "bottom": 2,
+            "leftUnit": "px",
+            "rightUnit": "px",
+            "topUnit": "px",
+            "bottomUnit": "px"
+            }
+        </script>
+
+        <script data-tchmi-target-attribute="data-tchmi-border-radius" type="application/json">
+            {
+            "topLeft": 5.0,
+            "topRight": 5.0,
+            "bottomLeft": 5.0,
+            "bottomRight": 5.0,
+            "topLeftUnit": "px",
+            "topRightUnit": "px",
+            "bottomLeftUnit": "px",
+            "bottomRightUnit": "px"
+            }
+        </script>
+
+        
+    
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+[
+  {
+    "event": "%s%PLC1.Global.controller::ButtonY%/s%",
+    "actions": [
+      {
+        "objectType": "Condition",
+        "active": true,
+        "parts": [
+          {
+            "if": [
+              {
+                "compare1": {
+                  "objectType": "Symbol",
+                  "valueType": "tchmi:general#/definitions/BOOL",
+                  "symbolExpression": "%s%PLC1.Global.controller::ButtonY%/s%"
+                },
+                "compare2": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:general#/definitions/BOOL",
+                  "value": true
+                },
+                "compareOperator": "==",
+                "logic": null
+              }
+            ],
+            "then": [
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%TcHmiTextblock_ButtonY::ClassNames%/ctrl%",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:framework#/definitions/ClassNameList",
+                  "value": [
+                    "IsActiveLabel"
+                  ]
+                },
+                "asyncWait": true
+              }
+            ]
+          },
+          {
+            "else": [
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%TcHmiTextblock_ButtonY::ClassNames%/ctrl%",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:framework#/definitions/ClassNameList",
+                  "value": [
+                    "IsNotActiveLabel"
+                  ]
+                },
+                "asyncWait": true
+              }
+            ]
+          }
+        ],
+        "asyncWait": true
+      }
+    ]
+  }
+]
+</script>
+</div>
+    <div id="TcHmiTextblock_RightBumper" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="26" data-tchmi-height-unit="px" data-tchmi-left="541" data-tchmi-left-unit="px" data-tchmi-text="RightBumper" data-tchmi-top="209" data-tchmi-top-unit="px" data-tchmi-width="92" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-right-unit="px" data-tchmi-bottom-unit="px" data-tchmi-text-font-size-unit="px" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-max-width-unit="px" data-tchmi-max-height-unit="px" data-tchmi-min-width-unit="px" data-tchmi-min-height-unit="px">
+        <script data-tchmi-target-attribute="data-tchmi-border-style" type="application/json">
+            {
+            "left": "Solid",
+            "right": "Solid",
+            "top": "Solid",
+            "bottom": "Solid"
+            }
+        </script>
+
+        <script data-tchmi-target-attribute="data-tchmi-border-width" type="application/json">
+            {
+            "left": 2,
+            "right": 2,
+            "top": 2,
+            "bottom": 2,
+            "leftUnit": "px",
+            "rightUnit": "px",
+            "topUnit": "px",
+            "bottomUnit": "px"
+            }
+        </script>
+
+        <script data-tchmi-target-attribute="data-tchmi-border-radius" type="application/json">
+            {
+            "topLeft": 5.0,
+            "topRight": 5.0,
+            "bottomLeft": 5.0,
+            "bottomRight": 5.0,
+            "topLeftUnit": "px",
+            "topRightUnit": "px",
+            "bottomLeftUnit": "px",
+            "bottomRightUnit": "px"
+            }
+        </script>
+
+        
+    
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+[
+  {
+    "event": "%s%PLC1.Global.controller::RightBumper%/s%",
+    "actions": [
+      {
+        "objectType": "Condition",
+        "active": true,
+        "parts": [
+          {
+            "if": [
+              {
+                "compare1": {
+                  "objectType": "Symbol",
+                  "valueType": "tchmi:general#/definitions/BOOL",
+                  "symbolExpression": "%s%PLC1.Global.controller::RightBumper%/s%"
+                },
+                "compare2": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:general#/definitions/BOOL",
+                  "value": true
+                },
+                "compareOperator": "==",
+                "logic": null
+              }
+            ],
+            "then": [
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%TcHmiTextblock_RightBumper::ClassNames%/ctrl%",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:framework#/definitions/ClassNameList",
+                  "value": [
+                    "IsActiveLabel"
+                  ]
+                },
+                "asyncWait": true
+              }
+            ]
+          },
+          {
+            "else": [
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%TcHmiTextblock_RightBumper::ClassNames%/ctrl%",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:framework#/definitions/ClassNameList",
+                  "value": [
+                    "IsNotActiveLabel"
+                  ]
+                },
+                "asyncWait": true
+              }
+            ]
+          }
+        ],
+        "asyncWait": true
+      }
+    ]
+  }
+]
+</script>
+</div>
+    <div id="TcHmiTextblock_LeftBumper" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="26" data-tchmi-height-unit="px" data-tchmi-left="59" data-tchmi-left-unit="px" data-tchmi-text="LeftBumper" data-tchmi-top="209" data-tchmi-top-unit="px" data-tchmi-width="92" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-right-unit="px" data-tchmi-bottom-unit="px" data-tchmi-text-font-size-unit="px" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-max-width-unit="px" data-tchmi-max-height-unit="px" data-tchmi-min-width-unit="px" data-tchmi-min-height-unit="px">
+        <script data-tchmi-target-attribute="data-tchmi-border-style" type="application/json">
+            {
+            "left": "Solid",
+            "right": "Solid",
+            "top": "Solid",
+            "bottom": "Solid"
+            }
+        </script>
+
+        <script data-tchmi-target-attribute="data-tchmi-border-width" type="application/json">
+            {
+            "left": 2,
+            "right": 2,
+            "top": 2,
+            "bottom": 2,
+            "leftUnit": "px",
+            "rightUnit": "px",
+            "topUnit": "px",
+            "bottomUnit": "px"
+            }
+        </script>
+
+        <script data-tchmi-target-attribute="data-tchmi-border-radius" type="application/json">
+            {
+            "topLeft": 5.0,
+            "topRight": 5.0,
+            "bottomLeft": 5.0,
+            "bottomRight": 5.0,
+            "topLeftUnit": "px",
+            "topRightUnit": "px",
+            "bottomLeftUnit": "px",
+            "bottomRightUnit": "px"
+            }
+        </script>
+
+        
+    
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+[
+  {
+    "event": "%s%PLC1.Global.controller::LeftBumper%/s%",
+    "actions": [
+      {
+        "objectType": "Condition",
+        "active": true,
+        "parts": [
+          {
+            "if": [
+              {
+                "compare1": {
+                  "objectType": "Symbol",
+                  "valueType": "tchmi:general#/definitions/BOOL",
+                  "symbolExpression": "%s%PLC1.Global.controller::LeftBumper%/s%"
+                },
+                "compare2": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:general#/definitions/BOOL",
+                  "value": true
+                },
+                "compareOperator": "==",
+                "logic": null
+              }
+            ],
+            "then": [
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%TcHmiTextblock_LeftBumper::ClassNames%/ctrl%",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:framework#/definitions/ClassNameList",
+                  "value": [
+                    "IsActiveLabel"
+                  ]
+                },
+                "asyncWait": true
+              }
+            ]
+          },
+          {
+            "else": [
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%TcHmiTextblock_LeftBumper::ClassNames%/ctrl%",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:framework#/definitions/ClassNameList",
+                  "value": [
+                    "IsNotActiveLabel"
+                  ]
+                },
+                "asyncWait": true
+              }
+            ]
+          }
+        ],
+        "asyncWait": true
+      }
+    ]
+  }
+]
+</script>
+</div>
+    <div id="TcHmiTextblock_Back" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="26" data-tchmi-height-unit="px" data-tchmi-left="377" data-tchmi-left-unit="px" data-tchmi-text="Back" data-tchmi-top="223" data-tchmi-top-unit="px" data-tchmi-width="55" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-right-unit="px" data-tchmi-bottom-unit="px" data-tchmi-text-font-size-unit="px" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-max-width-unit="px" data-tchmi-max-height-unit="px" data-tchmi-min-width-unit="px" data-tchmi-min-height-unit="px">
+        <script data-tchmi-target-attribute="data-tchmi-border-style" type="application/json">
+            {
+            "left": "Solid",
+            "right": "Solid",
+            "top": "Solid",
+            "bottom": "Solid"
+            }
+        </script>
+
+        <script data-tchmi-target-attribute="data-tchmi-border-width" type="application/json">
+            {
+            "left": 2,
+            "right": 2,
+            "top": 2,
+            "bottom": 2,
+            "leftUnit": "px",
+            "rightUnit": "px",
+            "topUnit": "px",
+            "bottomUnit": "px"
+            }
+        </script>
+
+        <script data-tchmi-target-attribute="data-tchmi-border-radius" type="application/json">
+            {
+            "topLeft": 5.0,
+            "topRight": 5.0,
+            "bottomLeft": 5.0,
+            "bottomRight": 5.0,
+            "topLeftUnit": "px",
+            "topRightUnit": "px",
+            "bottomLeftUnit": "px",
+            "bottomRightUnit": "px"
+            }
+        </script>
+
+        
+    
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+[
+  {
+    "event": "%s%PLC1.Global.controller::Back%/s%",
+    "actions": [
+      {
+        "objectType": "Condition",
+        "active": true,
+        "parts": [
+          {
+            "if": [
+              {
+                "compare1": {
+                  "objectType": "Symbol",
+                  "valueType": "tchmi:general#/definitions/BOOL",
+                  "symbolExpression": "%s%PLC1.Global.controller::Back%/s%"
+                },
+                "compare2": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:general#/definitions/BOOL",
+                  "value": true
+                },
+                "compareOperator": "==",
+                "logic": null
+              }
+            ],
+            "then": [
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%TcHmiTextblock_Back::ClassNames%/ctrl%",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:framework#/definitions/ClassNameList",
+                  "value": [
+                    "IsActiveLabel"
+                  ]
+                },
+                "asyncWait": true
+              }
+            ]
+          },
+          {
+            "else": [
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%TcHmiTextblock_Back::ClassNames%/ctrl%",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:framework#/definitions/ClassNameList",
+                  "value": [
+                    "IsNotActiveLabel"
+                  ]
+                },
+                "asyncWait": true
+              }
+            ]
+          }
+        ],
+        "asyncWait": true
+      }
+    ]
+  }
+]
+</script>
+</div>
+    <div id="TcHmiTextblock_Start" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="26" data-tchmi-height-unit="px" data-tchmi-left="79" data-tchmi-left-unit="px" data-tchmi-text="Start" data-tchmi-top="267" data-tchmi-top-unit="px" data-tchmi-width="55" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-right-unit="px" data-tchmi-bottom-unit="px" data-tchmi-text-font-size-unit="px" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-max-width-unit="px" data-tchmi-max-height-unit="px" data-tchmi-min-width-unit="px" data-tchmi-min-height-unit="px" data-tchmi-opacity="1">
+        <script data-tchmi-target-attribute="data-tchmi-border-style" type="application/json">
+            {
+            "left": "Solid",
+            "right": "Solid",
+            "top": "Solid",
+            "bottom": "Solid"
+            }
+        </script>
+
+        <script data-tchmi-target-attribute="data-tchmi-border-width" type="application/json">
+            {
+            "left": 2,
+            "right": 2,
+            "top": 2,
+            "bottom": 2,
+            "leftUnit": "px",
+            "rightUnit": "px",
+            "topUnit": "px",
+            "bottomUnit": "px"
+            }
+        </script>
+
+        <script data-tchmi-target-attribute="data-tchmi-border-radius" type="application/json">
+            {
+            "topLeft": 5.0,
+            "topRight": 5.0,
+            "bottomLeft": 5.0,
+            "bottomRight": 5.0,
+            "topLeftUnit": "px",
+            "topRightUnit": "px",
+            "bottomLeftUnit": "px",
+            "bottomRightUnit": "px"
+            }
+        </script>
+
+        
+    
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+[
+  {
+    "event": "%s%PLC1.Global.controller::Start%/s%",
+    "actions": [
+      {
+        "objectType": "Condition",
+        "active": true,
+        "parts": [
+          {
+            "if": [
+              {
+                "compare1": {
+                  "objectType": "Symbol",
+                  "valueType": "tchmi:general#/definitions/BOOL",
+                  "symbolExpression": "%s%PLC1.Global.controller::Start%/s%"
+                },
+                "compare2": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:general#/definitions/BOOL",
+                  "value": true
+                },
+                "compareOperator": "==",
+                "logic": null
+              }
+            ],
+            "then": [
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%TcHmiTextblock_Start::ClassNames%/ctrl%",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:framework#/definitions/ClassNameList",
+                  "value": [
+                    "IsActiveLabel"
+                  ]
+                },
+                "asyncWait": true
+              }
+            ]
+          },
+          {
+            "else": [
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%TcHmiTextblock_Start::ClassNames%/ctrl%",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:framework#/definitions/ClassNameList",
+                  "value": [
+                    "IsNotActiveLabel"
+                  ]
+                },
+                "asyncWait": true
+              }
+            ]
+          }
+        ],
+        "asyncWait": true
+      }
+    ]
+  }
+]
+</script>
+</div>
+    <div id="TcHmiTextblock_ButtonA" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="26" data-tchmi-height-unit="px" data-tchmi-left="587" data-tchmi-left-unit="px" data-tchmi-text="ButtonA" data-tchmi-top="413" data-tchmi-top-unit="px" data-tchmi-width="92" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-right-unit="px" data-tchmi-bottom-unit="px" data-tchmi-text-font-size-unit="px" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-max-width-unit="px" data-tchmi-max-height-unit="px" data-tchmi-min-width-unit="px" data-tchmi-min-height-unit="px">
+        <script data-tchmi-target-attribute="data-tchmi-border-style" type="application/json">
+            {
+            "left": "Solid",
+            "right": "Solid",
+            "top": "Solid",
+            "bottom": "Solid"
+            }
+        </script>
+
+        <script data-tchmi-target-attribute="data-tchmi-border-width" type="application/json">
+            {
+            "left": 2,
+            "right": 2,
+            "top": 2,
+            "bottom": 2,
+            "leftUnit": "px",
+            "rightUnit": "px",
+            "topUnit": "px",
+            "bottomUnit": "px"
+            }
+        </script>
+
+        <script data-tchmi-target-attribute="data-tchmi-border-radius" type="application/json">
+            {
+            "topLeft": 5.0,
+            "topRight": 5.0,
+            "bottomLeft": 5.0,
+            "bottomRight": 5.0,
+            "topLeftUnit": "px",
+            "topRightUnit": "px",
+            "bottomLeftUnit": "px",
+            "bottomRightUnit": "px"
+            }
+        </script>
+
+        
+    
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+[
+  {
+    "event": "%s%PLC1.Global.controller::ButtonA%/s%",
+    "actions": [
+      {
+        "objectType": "Condition",
+        "active": true,
+        "parts": [
+          {
+            "if": [
+              {
+                "compare1": {
+                  "objectType": "Symbol",
+                  "valueType": "tchmi:general#/definitions/BOOL",
+                  "symbolExpression": "%s%PLC1.Global.controller::ButtonA%/s%"
+                },
+                "compare2": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:general#/definitions/BOOL",
+                  "value": true
+                },
+                "compareOperator": "==",
+                "logic": null
+              }
+            ],
+            "then": [
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%TcHmiTextblock_ButtonA::ClassNames%/ctrl%",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:framework#/definitions/ClassNameList",
+                  "value": [
+                    "IsActiveLabel"
+                  ]
+                },
+                "asyncWait": true
+              }
+            ]
+          },
+          {
+            "else": [
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%TcHmiTextblock_ButtonA::ClassNames%/ctrl%",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:framework#/definitions/ClassNameList",
+                  "value": [
+                    "IsNotActiveLabel"
+                  ]
+                },
+                "asyncWait": true
+              }
+            ]
+          }
+        ],
+        "asyncWait": true
+      }
+    ]
+  }
+]
+</script>
+</div>
+    <div id="TcHmiLinearGauge_LeftTrigger" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiLinearGauge" data-tchmi-base-animation-time="10" data-tchmi-height="49" data-tchmi-height-unit="px" data-tchmi-label-range="50" data-tchmi-left="104" data-tchmi-left-unit="px" data-tchmi-show-labels="True" data-tchmi-show-ticks="True" data-tchmi-show-value-text="false" data-tchmi-start-from-zero="true" data-tchmi-top="139" data-tchmi-top-unit="px" data-tchmi-width="241" data-tchmi-width-unit="px" data-tchmi-right-unit="px" data-tchmi-bottom-unit="px" data-tchmi-max-value="255" data-tchmi-min-value="0" data-tchmi-value-space-unit="px" data-tchmi-value-font-size-unit="px" data-tchmi-step="0" data-tchmi-label-font-size-unit="px" data-tchmi-value="%s%PLC1.Global.controller::LeftTrigger%/s%" data-tchmi-unit-font-size-unit="px" data-tchmi-orientation="Horizontal" data-tchmi-zindex="1" data-tchmi-label-font-size="10" data-tchmi-max-width-unit="px" data-tchmi-max-height-unit="px" data-tchmi-min-width-unit="px" data-tchmi-min-height-unit="px">
+
+        <script data-tchmi-target-attribute="data-tchmi-value-format" type="application/json">
+            {
+            "objectType": "Function",
+            "fn": "GaugeValueFormatter",
+            "fnParams": []
+            }
+        </script>
+        <script data-tchmi-target-attribute="data-tchmi-tick-definition" type="application/json">
+            {
+            "mainTickRange": 50.0,
+            "subTickRange": 5.0
+            }
+        </script>
+
+
+        <script data-tchmi-target-attribute="data-tchmi-background-color" type="application/json">
+            {
+            "color": "None"
+            }
+        </script>
+
+        <script data-tchmi-target-attribute="data-tchmi-tick-color" type="application/json">
+            {
+            "color": "rgba(127, 127, 127, 1)"
+            }
+        </script>
+
+        <script data-tchmi-target-attribute="data-tchmi-label-color" type="application/json">
+            {
+            "color": "rgba(74, 74, 74, 1)"
+            }
+        </script>
+
+
+
+        <script data-tchmi-target-attribute="data-tchmi-progress-foreground-color" type="application/json">
+            {
+            "color": "rgba(212, 47, 53, 1)"
+            }
+        </script>
+
+
+    </div>
+    <div id="TcHmiTextblock_LeftTrigger" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="76" data-tchmi-height-unit="px" data-tchmi-left="116" data-tchmi-left-unit="px" data-tchmi-text="LeftTrigger" data-tchmi-top="117" data-tchmi-top-unit="px" data-tchmi-width="219" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-right-unit="px" data-tchmi-bottom-unit="px" data-tchmi-text-font-size-unit="px" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Top" data-tchmi-max-width-unit="px" data-tchmi-max-height-unit="px" data-tchmi-min-width-unit="px" data-tchmi-min-height-unit="px">
+        <script data-tchmi-target-attribute="data-tchmi-border-style" type="application/json">
+            {
+            "left": "Solid",
+            "right": "Solid",
+            "top": "Solid",
+            "bottom": "Solid"
+            }
+        </script>
+
+        <script data-tchmi-target-attribute="data-tchmi-border-width" type="application/json">
+            {
+            "left": 2,
+            "right": 2,
+            "top": 2,
+            "bottom": 2,
+            "leftUnit": "px",
+            "rightUnit": "px",
+            "topUnit": "px",
+            "bottomUnit": "px"
+            }
+        </script>
+
+        <script data-tchmi-target-attribute="data-tchmi-border-radius" type="application/json">
+            {
+            "topLeft": 5.0,
+            "topRight": 5.0,
+            "bottomLeft": 5.0,
+            "bottomRight": 5.0,
+            "topLeftUnit": "px",
+            "topRightUnit": "px",
+            "bottomLeftUnit": "px",
+            "bottomRightUnit": "px"
+            }
+        </script>
+
+        <script data-tchmi-target-attribute="data-tchmi-background-color" type="application/json">
+            {
+            "color": "rgba(232, 232, 232, 1)"
+            }
+        </script>
+
+        <script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
+            {
+            "left": 0,
+            "right": 0,
+            "top": 3,
+            "bottom": 0,
+            "leftUnit": "px",
+            "rightUnit": "px",
+            "topUnit": "px",
+            "bottomUnit": "px"
+            }
+        </script>
+    </div>
+    <div id="TcHmiLinearGauge_RightTrigger" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiLinearGauge" data-tchmi-base-animation-time="10" data-tchmi-height="49" data-tchmi-height-unit="px" data-tchmi-label-range="50" data-tchmi-left="345" data-tchmi-left-unit="px" data-tchmi-show-labels="True" data-tchmi-show-ticks="True" data-tchmi-show-value-text="false" data-tchmi-start-from-zero="true" data-tchmi-top="139" data-tchmi-top-unit="px" data-tchmi-width="241" data-tchmi-width-unit="px" data-tchmi-right-unit="px" data-tchmi-bottom-unit="px" data-tchmi-max-value="255" data-tchmi-min-value="0" data-tchmi-value-space-unit="px" data-tchmi-value-font-size-unit="px" data-tchmi-step="0" data-tchmi-label-font-size-unit="px" data-tchmi-value="%s%PLC1.Global.controller::RightTrigger%/s%" data-tchmi-unit-font-size-unit="px" data-tchmi-orientation="Horizontal" data-tchmi-zindex="1" data-tchmi-label-font-size="10" data-tchmi-max-width-unit="px" data-tchmi-max-height-unit="px" data-tchmi-min-width-unit="px" data-tchmi-min-height-unit="px">
+        <script data-tchmi-target-attribute="data-tchmi-value-format" type="application/json">
+            {
+            "objectType": "Function",
+            "fn": "GaugeValueFormatter",
+            "fnParams": []
+            }
+        </script>
+        <script data-tchmi-target-attribute="data-tchmi-tick-definition" type="application/json">
+            {
+            "mainTickRange": 50.0,
+            "subTickRange": 5.0
+            }
+        </script>
+
+
+        <script data-tchmi-target-attribute="data-tchmi-background-color" type="application/json">
+            {
+            "color": "None"
+            }
+        </script>
+
+        <script data-tchmi-target-attribute="data-tchmi-tick-color" type="application/json">
+            {
+            "color": "rgba(127, 127, 127, 1)"
+            }
+        </script>
+
+        <script data-tchmi-target-attribute="data-tchmi-label-color" type="application/json">
+            {
+            "color": "rgba(74, 74, 74, 1)"
+            }
+        </script>
+
+
+
+        <script data-tchmi-target-attribute="data-tchmi-progress-foreground-color" type="application/json">
+            {
+            "color": "rgba(212, 47, 53, 1)"
+            }
+        </script>
+
+
+    </div>
+    <div id="TcHmiTextblock_RightTrigger" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="76" data-tchmi-height-unit="px" data-tchmi-left="357" data-tchmi-left-unit="px" data-tchmi-text="RightTrigger" data-tchmi-top="117" data-tchmi-top-unit="px" data-tchmi-width="219" data-tchmi-width-unit="px" data-tchmi-word-wrap="True" data-tchmi-right-unit="px" data-tchmi-bottom-unit="px" data-tchmi-text-font-size-unit="px" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Top" data-tchmi-max-width-unit="px" data-tchmi-max-height-unit="px" data-tchmi-min-width-unit="px" data-tchmi-min-height-unit="px">
+        <script data-tchmi-target-attribute="data-tchmi-border-style" type="application/json">
+            {
+            "left": "Solid",
+            "right": "Solid",
+            "top": "Solid",
+            "bottom": "Solid"
+            }
+        </script>
+
+        <script data-tchmi-target-attribute="data-tchmi-border-width" type="application/json">
+            {
+            "left": 2,
+            "right": 2,
+            "top": 2,
+            "bottom": 2,
+            "leftUnit": "px",
+            "rightUnit": "px",
+            "topUnit": "px",
+            "bottomUnit": "px"
+            }
+        </script>
+
+        <script data-tchmi-target-attribute="data-tchmi-border-radius" type="application/json">
+            {
+            "topLeft": 5.0,
+            "topRight": 5.0,
+            "bottomLeft": 5.0,
+            "bottomRight": 5.0,
+            "topLeftUnit": "px",
+            "topRightUnit": "px",
+            "bottomLeftUnit": "px",
+            "bottomRightUnit": "px"
+            }
+        </script>
+
+        <script data-tchmi-target-attribute="data-tchmi-background-color" type="application/json">
+            {
+            "color": "rgba(232, 232, 232, 1)"
+            }
+        </script>
+
+        <script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
+            {
+            "left": 0,
+            "right": 0,
+            "top": 3,
+            "bottom": 0,
+            "leftUnit": "px",
+            "rightUnit": "px",
+            "topUnit": "px",
+            "bottomUnit": "px"
+            }
+        </script>
+    </div>
+    <div id="TcHmiContainer_Logo" data-tchmi-type="TcHmi.Controls.System.TcHmiContainer" data-tchmi-height="90" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width-unit="px" data-tchmi-right="0" data-tchmi-right-unit="px" data-tchmi-bottom-unit="px" data-tchmi-max-width-unit="px" data-tchmi-max-height-unit="px" data-tchmi-min-width-unit="px" data-tchmi-min-height-unit="px" data-tchmi-opacity="1" data-tchmi-background-image-width-unit="px" data-tchmi-background-image-height-unit="px">
+        <div data-tchmi-grid-row-index="0" data-tchmi-grid-column-index="0" id="ViewDesktopBeckhoffLogo" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiImage" data-tchmi-src="Images/Beckhoff_Logo.svg" data-tchmi-left="20" data-tchmi-top="20" data-tchmi-width="194" data-tchmi-height="57" data-tchmi-left-unit="px" data-tchmi-top-unit="px" data-tchmi-right-unit="px" data-tchmi-bottom-unit="px" data-tchmi-width-unit="px" data-tchmi-height-unit="px" data-tchmi-max-width-unit="px" data-tchmi-max-height-unit="px" data-tchmi-min-width-unit="px" data-tchmi-min-height-unit="px">
+        </div>
+
+        <script data-tchmi-target-attribute="data-tchmi-box-shadow" type="application/json">
+            [
+            {
+            "color": {
+            "color": "rgba(0, 0, 0, 0.0784313)"
+            },
+            "offsetX": 0.0,
+            "offsetXUnit": "px",
+            "offsetY": 2.0,
+            "offsetYUnit": "px",
+            "inset": false,
+            "blur": 2.0,
+            "blurUnit": "px",
+            "spread": 2.0,
+            "spreadUnit": "px"
+            }
+            ]
+        </script>
+
+        <script data-tchmi-target-attribute="data-tchmi-background-color" type="application/json">
+            {
+            "color": "rgba(255, 255, 255, 0.3921568)"
+            }
+        </script>
+    </div>
+<div id="Joystick_RightThumb" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height="120" data-tchmi-height-unit="px" data-tchmi-left="357" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControls/Joystick.usercontrol" data-tchmi-top="470" data-tchmi-top-unit="px" data-tchmi-width="120" data-tchmi-width-unit="px" data-tchmi-right-unit="px" data-tchmi-bottom-unit="px" data-tchmi-rawx="%s%PLC1.Global.controller::RightJoystickX%/s%" data-tchmi-rawy="%s%PLC1.Global.controller::RightJoystickY%/s%" data-tchmi-background-image-width-unit="px" data-tchmi-background-image-height-unit="px" data-tchmi-max-width-unit="px" data-tchmi-max-height-unit="px" data-tchmi-min-width-unit="px" data-tchmi-min-height-unit="px" data-tchmi-button="%s%PLC1.Global.controller::RightThumb%/s%">
+</div>
+<div id="Joystick_LeftThumb" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height="120" data-tchmi-height-unit="px" data-tchmi-left="5" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControls/Joystick.usercontrol" data-tchmi-top="298" data-tchmi-top-unit="px" data-tchmi-width="120" data-tchmi-width-unit="px" data-tchmi-right-unit="px" data-tchmi-bottom-unit="px" data-tchmi-rawx="%s%PLC1.Global.controller::LeftJoystickX%/s%" data-tchmi-rawy="%s%PLC1.Global.controller::LeftJoystickY%/s%" data-tchmi-background-image-width-unit="px" data-tchmi-background-image-height-unit="px" data-tchmi-max-width-unit="px" data-tchmi-max-height-unit="px" data-tchmi-min-width-unit="px" data-tchmi-min-height-unit="px" data-tchmi-button="%s%PLC1.Global.controller::LeftThumb%/s%">
+</div>
+<div id="DpadControl" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height="120" data-tchmi-height-unit="px" data-tchmi-left="214" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControls/DPad.usercontrol" data-tchmi-top="470" data-tchmi-top-unit="px" data-tchmi-width="120" data-tchmi-width-unit="px" data-tchmi-max-width-unit="px" data-tchmi-max-height-unit="px" data-tchmi-min-width-unit="px" data-tchmi-min-height-unit="px" data-tchmi-opacity="1" data-tchmi-right-unit="px" data-tchmi-bottom-unit="px" data-tchmi-background-image-width-unit="px" data-tchmi-background-image-height-unit="px" data-tchmi-rawx="%s%PLC1.Global.controller::DPadX%/s%" data-tchmi-rawy="%s%PLC1.Global.controller::DPadY%/s%">
+</div>
+</div>

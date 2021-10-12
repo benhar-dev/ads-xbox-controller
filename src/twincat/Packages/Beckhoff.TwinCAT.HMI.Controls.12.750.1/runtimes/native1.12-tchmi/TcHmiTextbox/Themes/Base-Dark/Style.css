@@ -1,0 +1,19 @@
+/** Styles for the theme: Base-Dark */
+
+/* Style for the main element */
+.TcHmi_Controls_Beckhoff_TcHmiTextbox,
+.tchmi-textbox {
+    --tchmi-background: #2A3845;
+    --tchmi-color: #FFFFFF;
+    background-color: var(--tchmi-background);
+}
+
+.TcHmi_Controls_Beckhoff_TcHmiTextbox-template-border,
+.tchmi-textbox-template-border {
+    box-shadow: inset 0px 0px 0px 1px rgba(0,0,0,0.2), inset 0px 0px 3px 2px rgba(0,0,0,0.3);
+}
+
+.TcHmi_Controls_Beckhoff_TcHmiTextbox-template-input-container,
+.tchmi-textbox-template-input-container {
+    color: var(--tchmi-color);
+}

@@ -1,0 +1,22 @@
+/* Theme depended control css. */
+/* Base Theme*/
+.TcHmi_Controls_Beckhoff_TcHmiAdsState-template[data-tchmi-runtime-state] {
+    background-image: url(Images/twincat_unknown.svg);
+}
+
+.TcHmi_Controls_Beckhoff_TcHmiAdsState-template[data-tchmi-runtime-state="Run"] {
+    background-image: url(Images/twincat_run.svg);
+}
+
+.TcHmi_Controls_Beckhoff_TcHmiAdsState-template[data-tchmi-runtime-state="Stop"],
+.TcHmi_Controls_Beckhoff_TcHmiAdsState-template[data-tchmi-runtime-state="Error"] {
+    background-image: url(Images/twincat_stop.svg);
+}
+
+.TcHmi_Controls_Beckhoff_TcHmiAdsState-template[data-tchmi-runtime-state="Config"] {
+    background-image: url(Images/twincat_config.svg);
+}
+
+.TcHmi_Controls_Beckhoff_TcHmiAdsState-template[data-tchmi-runtime-state="Exception"] {
+    background-image: url(Images/twincat_exception.svg);
+}

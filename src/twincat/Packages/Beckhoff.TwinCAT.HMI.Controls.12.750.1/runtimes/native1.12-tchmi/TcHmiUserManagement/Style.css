@@ -1,0 +1,228 @@
+/* General theme independed control css. */
+.TcHmi_Controls_Beckhoff_TcHmiUserManagement {
+    overflow: visible;
+}
+
+.TcHmi_Controls_Beckhoff_TcHmiUserManagement-Template {
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    display: flex;
+    overflow: hidden;
+    border-radius: inherit;
+}
+
+.TcHmi_Controls_Beckhoff_TcHmiUserManagement-Base {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    padding: 16px;
+}
+
+
+.TcHmi_Controls_Beckhoff_TcHmiUserManagement-button {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    right: 0;
+    pointer-events: none;
+    border-top-right-radius: inherit;
+    border-bottom-right-radius: inherit;
+}
+
+.TcHmi_Controls_Beckhoff_TcHmiUserManagement-button-arrow {
+    fill: none;
+}
+
+.TcHmi_Controls_Beckhoff_TcHmiUserManagement-Dropdown {
+    position: absolute;
+    background: inherit;
+    overflow: auto;
+}
+
+.TcHmi_Controls_Beckhoff_TcHmiUserManagement-template-Dropdown-Element {
+    width: 100%;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Popup Styles */
+.TcHmi_Controls_Beckhoff_TcHmiUserManagement-template-popup {
+    padding: 10px;
+    font-size: 12px;
+    min-width: 320px;
+    overflow: auto;
+}
+
+@media screen and (max-width: 340px) {
+    .TcHmi_Controls_Beckhoff_TcHmiUserManagement-template-popup {
+        width: calc(100% - 20px);
+        min-width: 0;
+        margin: 0;
+    }
+}
+
+.TcHmi_Controls_Beckhoff_TcHmiUserManagement-template-popup input {
+    padding-left: 8px
+}
+
+.TcHmi_Controls_Beckhoff_TcHmiUserManagement-template-popup h1 {
+    font-size: 18px;
+    font-weight: normal;
+    margin-top: 0;
+    margin-bottom: 20px;
+    flex-shrink: 0;
+}
+
+.TcHmi_Controls_Beckhoff_TcHmiUserManagement-template-popup h2 {
+    font-size: 16px;
+    font-weight: normal;
+    margin-top: 10px;
+    margin-bottom: 0;
+    flex-shrink: 0;
+}
+
+.TcHmi_Controls_Beckhoff_TcHmiUserManagement-template-popup-content {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    flex-grow: 1;
+    flex-shrink: 1;
+    margin-bottom: 30px;
+}
+
+.TcHmi_Controls_Beckhoff_TcHmiUserManagement-template-popup-footer {
+    display: grid;
+    grid-template-columns: 1fr auto auto;
+}
+
+    .TcHmi_Controls_Beckhoff_TcHmiUserManagement-template-popup-footer .TcHmi_Controls_Beckhoff_TcHmiButton {
+        position: relative;
+        display: inline-block;
+        margin-left: 10px;
+        width: 60px;
+        height: 30px;
+    }
+
+    .TcHmi_Controls_Beckhoff_TcHmiUserManagement-template-popup-footer .TcHmi_Controls_Beckhoff_TcHmi_ToggleSwitch{
+        position: relative;
+        display: inline-block;
+        margin-left: 10px;
+        width: 60px;
+        height: 30px;
+    }
+
+        .TcHmi_Controls_Beckhoff_TcHmiUserManagement-template-popup-footer .TcHmi_Controls_Beckhoff_TcHmiButton.confirmbutton {
+            grid-column-start: 2;
+            grid-row-start: 1;
+        }
+
+        .TcHmi_Controls_Beckhoff_TcHmiUserManagement-template-popup-footer .TcHmi_Controls_Beckhoff_TcHmiButton.cancelbutton {
+            grid-column-start: 3;
+            grid-row-start: 1;
+        }
+
+    .TcHmi_Controls_Beckhoff_TcHmiUserManagement-template-popup-footer .TcHmi_Controls_Beckhoff_TcHmiButton.advanced-switch {
+        grid-column-start: 1;
+        grid-row-start: 1;
+    }
+
+
+.TcHmi_Controls_Beckhoff_TcHmiUserManagement-template-popup-content .TcHmi_Controls_Beckhoff_TcHmiInput,
+.TcHmi_Controls_Beckhoff_TcHmiUserManagement-template-popup-content .TcHmi_Controls_Beckhoff_TcHmiPasswordInput {
+    margin-top: 10px;
+    height: 30px;
+    position: relative;
+}
+
+/*USERMANAGEMENT POPUP*/
+.TcHmi_Controls_Beckhoff_TcHmiUserManagement-template-usermanagement-popup .TcHmi_Controls_Beckhoff_TcHmiUserManagement-template-popup-content:last-child {
+    margin-bottom: 16px;
+}
+
+.TcHmi_Controls_Beckhoff_TcHmiUserManagement-template-usermanagement-popup .TcHmi_Controls_Beckhoff_TcHmiUserManagement-template-popup-content .TcHmi_Controls_Beckhoff_TcHmiButton {
+    margin-top: 10px;
+    position: relative;
+    height: 30px;
+}
+
+
+/*ADD USER POPUP*/
+.TcHmi_Controls_Beckhoff_TcHmiUserManagement-template-popup .not-displayed {
+    display: none;
+}
+
+
+.TcHmi_Controls_Beckhoff_TcHmiUserManagement-template-popup-groups {
+    transition: box-shadow ease 0.1s;
+    overflow-y: auto;
+    margin-top: 10px;
+    max-height: 140px;
+}
+
+    .TcHmi_Controls_Beckhoff_TcHmiUserManagement-template-popup-groups .TcHmi_Controls_Beckhoff_TcHmiCheckbox {
+        position: relative;
+        height: 30px;
+        margin-top: 10px;
+    }
+
+
+.TcHmi_Controls_Beckhoff_TcHmiUserManagement-template-popup-feedback {
+    position: relative;
+    margin-bottom: 10px;
+    font-size: 14px;
+    height: auto;
+}
+
+.TcHmi_Controls_Beckhoff_TcHmiUserManagement-template-popup-content {
+    width: 100%;
+    display: block;
+    position: relative;
+}
+
+
+    .TcHmi_Controls_Beckhoff_TcHmiUserManagement-template-popup-content .TcHmi_Controls_Beckhoff_TcHmiCombobox {
+        height: 30px;
+        width: auto;
+        margin-top: 10px;
+        position: relative;
+    }
+
+.TcHmi_Controls_Beckhoff_TcHmiUserManagement-template-popup-content-radiobuttons {
+    display: block;
+    position: relative;
+    grid-template-rows: 30px 30px 30px 30px;
+}
+
+    .TcHmi_Controls_Beckhoff_TcHmiUserManagement-template-popup-content-radiobuttons .TcHmi_Controls_Beckhoff_TcHmiRadioButton {
+        margin-top: 10px;
+        height: 30px;
+        position: relative;
+    }
+    .TcHmi_Controls_Beckhoff_TcHmiUserManagement-template-popup-content-radiobuttons .combobox-selection {
+        margin-top: 10px;
+        height: 30px;
+        position: relative;
+        display: grid;
+        grid-template-columns: 40px auto;
+    }
+
+        .TcHmi_Controls_Beckhoff_TcHmiUserManagement-template-popup-content-radiobuttons .combobox-selection .TcHmi_Controls_Beckhoff_TcHmiRadioButton {
+            margin-top: 0;
+            height: 30px;
+            grid-column-start: 1;
+            width: 100%;
+        }
+
+        .TcHmi_Controls_Beckhoff_TcHmiUserManagement-template-popup-content-radiobuttons .combobox-selection .TcHmi_Controls_Beckhoff_TcHmiCombobox {
+            height: 30px;
+            margin-top: 0;
+            grid-column-start: 2;
+            width: 100%;
+        }
+
+.TcHmi_Controls_Beckhoff_TcHmiUserManagement-template-popup .TcHmi_Controls_Beckhoff_TcHmiRadioButton {
+    grid-template-columns: calc(var(--square-size) + 12px) minmax(0, 1fr);
+}

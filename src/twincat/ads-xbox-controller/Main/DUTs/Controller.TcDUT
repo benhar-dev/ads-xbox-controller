@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.9">
+  <DUT Name="Controller" Id="{1ec4be48-6310-4bfa-9a9d-ad4654985bce}">
+    <Declaration><![CDATA[TYPE Controller :
+STRUCT
+	LeftJoystickX : INT;
+	LeftJoystickY : INT;
+	RightJoystickX : INT;
+	RightJoystickY : INT;
+	LeftTrigger : INT;
+	RightTrigger : INT;
+	LeftBumper : BOOL;
+	RightBumper : BOOL;
+	ButtonA : BOOL;
+	ButtonB : BOOL;
+	ButtonX : BOOL;
+	ButtonY : BOOL;
+	LeftThumb : BOOL;
+	RightThumb : BOOL;
+	Back : BOOL;
+	Start : BOOL;
+	DPadX : INT;
+	DPadY : INT;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

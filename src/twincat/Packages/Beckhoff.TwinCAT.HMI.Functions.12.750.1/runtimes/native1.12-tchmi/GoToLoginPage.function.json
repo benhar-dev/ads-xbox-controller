@@ -1,0 +1,31 @@
+{
+    "$schema": "../TcHmiFramework/Schema/FunctionDescription.Schema.json",
+    "apiVersion": 1,
+    "version": {
+        "full": "1.12.750.1",
+        "major": 1,
+        "minor": 12,
+        "build": 750,
+        "revision": 1
+    },
+    "dependencyFiles": [
+        {
+            "name": "GoToLoginPage.js",
+            "type": "JavaScript",
+            "description": ""
+        }
+    ],
+    "function": {
+        "name": "GoToLoginPage",
+        "namespace": "TcHmi.Functions.Beckhoff",
+        "displayName": "GoToLoginPage",
+        "visible": true,
+        "category": "UserManagement",
+        "description": "Replace the current view with the login page",
+        "returnValue": {
+            "type": "tchmi:general#/definitions/Boolean",
+            "description": "Returns a boolean if the page change was called."
+        },
+        "arguments": []
+    }
+}

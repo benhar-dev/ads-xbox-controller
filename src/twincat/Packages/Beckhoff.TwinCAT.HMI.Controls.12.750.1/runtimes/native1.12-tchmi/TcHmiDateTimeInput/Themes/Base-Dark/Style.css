@@ -1,0 +1,43 @@
+/** Styles for the theme: Base-Dark */
+
+/* Style for the main element */
+.TcHmi_Controls_Beckhoff_TcHmiDateTimeInput {
+    --tchmi-button-background: linear-gradient(to bottom right, #4994da, #4162b0);
+    --tchmi-button-background-pressed: linear-gradient(to bottom right, #4162b0, #4994da);
+    --tchmi-background: #2A3845;
+    --tchmi-color: #FFFFFF;
+    background-color: var(--tchmi-background);
+}
+
+.TcHmi_Controls_Beckhoff_TcHmiDateTimeInput-template {
+    grid-template-columns: auto 26px;
+}
+
+    .TcHmi_Controls_Beckhoff_TcHmiDateTimeInput-template.left {
+        grid-template-columns: 26px auto;
+    }
+
+.TcHmi_Controls_Beckhoff_TcHmiDateTimeInput-template-input {
+    box-shadow: inset 0px 0px 0px 1px rgba(0,0,0,0.02), inset 0px 0px 3px 2px rgba(0,0,0,0.3);
+    color: var(--tchmi-color);
+}
+
+.TcHmi_Controls_Beckhoff_TcHmiDateTimeInput .TcHmi_Controls_Beckhoff_TcHmiDateTimeInput-template-button {
+    background-image: url(Images/datetimepicker_normal.svg), var(--tchmi-button-background);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+    .TcHmi_Controls_Beckhoff_TcHmiDateTimeInput .TcHmi_Controls_Beckhoff_TcHmiDateTimeInput-template-button:active {
+        background-image: url(Images/datetimepicker_pressed.svg), var(--tchmi-button-background-pressed);
+        box-shadow: inset 0px 0px 0px 1px rgba(0,0,0,0.02), inset 0px 0px 3px 2px rgba(0,0,0,0.3);
+    }
+
+.TcHmi_Controls_Beckhoff_TcHmiDateTimeInput-template-input.tchmi-focus {
+    background: rgba(76, 99, 116, 0.05);
+    opacity: 1;
+}
+
+.TcHmi_Controls_Beckhoff_TcHmiDateTimeInput-template-input:invalid {
+    box-shadow: inset 0px 0px 0px 1px rgba(0,0,0,0.02), inset 0px 0px 3px 2px rgba(0,0,0,0.3), inset 0px 0px 7px 3px rgba(255, 0, 0, 0.3);
+}

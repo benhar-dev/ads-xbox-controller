@@ -1,0 +1,14 @@
+{
+    "$schema": "http://json-schema.org/schema#",
+    "controlTypeValues": 
+    {
+        "TcHmi.Controls.Beckhoff.TcHmiUserManagement": {
+            "attributes": {},
+            "themedResources": {
+                "ErrorMarkingColor": {
+                    "color": "rgba(227, 6, 19, 1)"
+                }
+            }
+        }
+    }
+}

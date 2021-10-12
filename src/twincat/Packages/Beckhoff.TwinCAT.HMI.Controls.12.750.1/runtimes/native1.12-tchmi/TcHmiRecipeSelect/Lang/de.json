@@ -1,0 +1,14 @@
+{
+    "$schema": "../../../../TcHmiServer/TcHmiSrv/schema/Language.Schema.json",
+    "locale": "de",
+    "localizedText": {
+        "Label_Text_Select": "Auswählen",
+        "Header_Recipes": "Rezepte",
+        "Button_Text_Activate": "Aktivieren",
+        "Button_Tooltip_Activate": "Rezept aktivieren",
+        "Button_Text_Teach": "Anlernen",
+        "Button_Tooltip_Teach": "Rezept anlernen",
+        "Button_Text_Ok": "OK",
+        "Button_Text_Cancel": "Abbrechen"
+    }
+}

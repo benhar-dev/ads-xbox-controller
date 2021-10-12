@@ -1,0 +1,18 @@
+/** Styles for the theme: Base-Dark */
+
+/* Style for the main element */
+.TcHmi_Controls_Beckhoff_TcHmiInput {
+    --tchmi-background: #2A3845;
+    --tchmi-color: #FFFFFF;
+    background-color: var(--tchmi-background);
+}
+
+.TcHmi_Controls_Beckhoff_TcHmiInput-template-input{
+    box-shadow: inset 0px 0px 0px 1px rgba(0,0,0,0.02), inset 0px 0px 3px 2px rgba(0,0,0,0.3);
+    color: var(--tchmi-color);
+}
+
+    .TcHmi_Controls_Beckhoff_TcHmiInput-template-input.tchmi-focus {
+        background: rgba(76, 99, 116, 0.05);
+        opacity: 1;
+    }

@@ -1,0 +1,72 @@
+/** Styles for the theme: Base */
+.TcHmi_Controls_Beckhoff_TcHmiTimespanPicker,
+.tchmi-timespan-picker,
+.TcHmi_Controls_Beckhoff_TcHmiTimespanPicker-template-overlay,
+.tchmi-timespan-picker-template-overlay {
+    --tchmi-overlay-background: #ffffff;
+    --tchmi-background: rgba(255, 255, 255, 0.5);
+    --tchmi-color: #4794da;
+}
+
+.tchmi-system-topmostlayer-container .TcHmi_Controls_Beckhoff_TcHmiTimespanPicker-template-overlay,
+.tchmi-system-topmostlayer-container .tchmi-timespan-picker-template-overlay {
+    box-shadow: 0px 0px 6px 1px rgba(0,0,0,0.6);
+    background: var(--tchmi-overlay-background);
+}
+
+.TcHmi_Controls_Beckhoff_TcHmiTimespanPicker-template-label, .TcHmi_Controls_Beckhoff_TcHmiTimespanPicker-template-textbox,
+.tchmi-timespan-picker-template-label, .tchmi-timespan-picker-template-textbox {
+    color: var(--tchmi-color);
+}
+
+.TcHmi_Controls_Beckhoff_TcHmiTimespanPicker-template-overlay .TcHmi_Controls_Beckhoff_TcHmiTimespanPicker-template-textbox-error,
+.tchmi-timespan-picker-template-overlay .tchmi-timespan-picker-template-textbox-error {
+    background-color: rgba(255, 0,0, 0.4);
+}
+
+.TcHmi_Controls_Beckhoff_TcHmiTimespanPicker-template-overlay .TcHmi_Controls_Beckhoff_TcHmiTextbox-template-border,
+.tchmi-timespan-picker-template-overlay .tchmi-textbox-template-border {
+    box-shadow: initial;
+}
+
+.TcHmi_Controls_Beckhoff_TcHmiTimespanPicker-template-up-button > div{
+    background-image: url('Images/icons_plus_normal.svg');
+    background-size: 100% 100%;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+
+.TcHmi_Controls_Beckhoff_TcHmiTimespanPicker-template-up-button:not(.TcHmi_Controls_System_TcHmiControl-disabled):not(.TcHmi_Controls_System_TcHmiControl-operate-disallowed).down > div,
+.tchmi-timespan-picker-template-up-button:not(.tchmi-control-disabled):not(.tchmi-control-operate-disallowed).down > div {
+    background-image: url('Images/icons_plus_pressed.svg');
+    background-size: 100% 100%;
+    background-position: 50% 50%;
+}
+
+.TcHmi_Controls_Beckhoff_TcHmiTimespanPicker-template-down-button > div,
+.tchmi-timespan-picker-template-down-button > div {
+    background-image: url('Images/icons_minus_normal.svg');
+    background-size: 100% 100%;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+
+.TcHmi_Controls_Beckhoff_TcHmiTimespanPicker-template-down-button:not(.TcHmi_Controls_System_TcHmiControl-disabled):not(.TcHmi_Controls_System_TcHmiControl-operate-disallowed).down > div,
+.tchmi-timespan-picker-template-down-button:not(.tchmi-control-disabled):not(.tchmi-control-operate-disallowed).down > div {
+    background-image: url('Images/icons_minus_pressed.svg');
+    background-size: 100% 100%;
+    background-position: 50% 50%;
+}
+
+
+/** Show in View styles **/
+.TcHmi_Controls_Beckhoff_TcHmiTimespanPicker-direct-display .TcHmi_Controls_Beckhoff_TcHmiTimespanPicker-template-overlay,
+.TcHmi_Controls_Beckhoff_TcHmiTimespanPicker-direct-display .tchmi-timespan-picker-template-overlay {
+    box-shadow: none;
+    background: none;
+}
+
+.TcHmi_Controls_Beckhoff_TcHmiTimespanPicker-direct-display.TcHmi_Controls_Beckhoff_TcHmiTimespanPicker,
+.TcHmi_Controls_Beckhoff_TcHmiTimespanPicker-direct-display.tchmi-timespan-picker {
+    background: var(--tchmi-background);
+}

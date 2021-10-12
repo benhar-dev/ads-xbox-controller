@@ -1,0 +1,60 @@
+/* Theme depended control css. */
+/*Base-Dark Theme*/
+.TcHmi_Controls_Beckhoff_TcHmiEventLine {
+    --tchmi-text-color: #ffffff;
+    --tchmi-text-color-pressed: #ffffff;
+    --tchmi-background: #1b1b1f;
+    --tchmi-background-pressed: #1b1b1f;
+    --tchmi-icon-size: 40px;
+    background: var(--tchmi-background);
+    color: var(--tchmi-text-color);
+}
+
+    .TcHmi_Controls_Beckhoff_TcHmiEventLine .TcHmi_Controls_Beckhoff_TcHmiEventLine-Button{
+        background-image: url(Images/icons_next_normal.svg);
+    }
+
+    .TcHmi_Controls_Beckhoff_TcHmiEventLine.down {
+        background: var(--tchmi-background-pressed);
+        color: var(--tchmi-text-color-pressed);
+    }
+
+        .TcHmi_Controls_Beckhoff_TcHmiEventLine.down .TcHmi_Controls_Beckhoff_TcHmiEventLine-Button {
+            background-image: url(Images/icons_next_pressed.svg);
+        }
+
+.TcHmi_Controls_Beckhoff_TcHmiEventLine-Icon {
+    flex-basis: var(--tchmi-icon-size);
+    background-size: var(--tchmi-icon-size) var(--tchmi-icon-size);
+}
+
+.TcHmi_Controls_Beckhoff_TcHmiEventLine-Message {
+    padding: 3px;
+    flex-basis: var(--tchmi-icon-size);
+}
+
+.TcHmi_Controls_Beckhoff_TcHmiEventLine-Button {
+    flex-basis: var(--tchmi-icon-size);
+    background-size: var(--tchmi-icon-size) var(--tchmi-icon-size);
+}
+
+/* Icons */
+.TcHmi_Controls_Beckhoff_TcHmiEventLine-Icon.severity-critical {
+    background-image: url("Images/critical.svg");
+}
+
+.TcHmi_Controls_Beckhoff_TcHmiEventLine-Icon.severity-error {
+    background-image: url("Images/error.svg");
+}
+
+.TcHmi_Controls_Beckhoff_TcHmiEventLine-Icon.severity-info {
+    background-image: url("Images/info.svg");
+}
+
+.TcHmi_Controls_Beckhoff_TcHmiEventLine-Icon.severity-verbose {
+    background-image: url("Images/verbose.svg");
+}
+
+.TcHmi_Controls_Beckhoff_TcHmiEventLine-Icon.severity-warning {
+    background-image: url("Images/warning.svg");
+}

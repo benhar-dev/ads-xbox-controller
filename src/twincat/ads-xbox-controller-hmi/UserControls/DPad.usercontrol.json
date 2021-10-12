@@ -1,0 +1,39 @@
+﻿{
+  "parameters": [
+    {
+      "name": "data-tchmi-rawx",
+      "displayName": "rawX",
+      "visible": true,
+      "type": "tchmi:general#/definitions/Number",
+      "category": "",
+      "description": "",
+      "requiredOnCompile": false,
+      "readOnly": false,
+      "bindable": true,
+      "heritable": true,
+      "propertyName": "rawX",
+      "propertySetterName": "setRawX",
+      "propertyGetterName": "getRawX",
+      "refTo": ""
+    },
+    {
+      "name": "data-tchmi-rawy",
+      "displayName": "rawY",
+      "visible": true,
+      "type": "tchmi:general#/definitions/Number",
+      "category": "",
+      "description": "",
+      "requiredOnCompile": false,
+      "readOnly": false,
+      "bindable": true,
+      "heritable": true,
+      "propertyName": "rawY",
+      "propertySetterName": "setRawY",
+      "propertyGetterName": "getRawY",
+      "refTo": ""
+    }
+  ],
+  "virtualRights": [],
+  "$schema": "./../../Packages/Beckhoff.TwinCAT.HMI.Framework.12.750.1/runtimes/native1.12-tchmi/Schema/UserControlConfig.Schema.json",
+  "description": ""
+}

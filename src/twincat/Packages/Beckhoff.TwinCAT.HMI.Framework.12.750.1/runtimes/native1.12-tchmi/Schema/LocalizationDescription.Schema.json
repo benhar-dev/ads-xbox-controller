@@ -1,0 +1,40 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "$schema": {
+      "type": "string",
+      "description": "URL to a schema file"
+    },
+    "scope": {
+      "type": "string",
+      "enum": [
+        "Server",
+        "Framework",
+        "Control"
+      ],
+      "description": "Describes if this file targets a server, framework or control file when it is copied inside the hmi project."
+    },
+    "source": {
+      "type": "string"
+    },
+    "locale": {
+      "description": "Language and Region (optionally) as described in ISO 639/BCP 47 (Examples: 'en', 'en-US').",
+      "format": "locale",
+      "type": "string"
+    },
+    "localizedText": {
+      "type": "object",
+      "description": "Name of each additionalProperties entry is the name of each language variable.",
+      "additionalProperties": {
+        "description": "Localized text. It may contain placeholders like {0}, {1}, ...",
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "locale",
+    "localizedText"
+  ],
+  "additionalProperties": false
+}

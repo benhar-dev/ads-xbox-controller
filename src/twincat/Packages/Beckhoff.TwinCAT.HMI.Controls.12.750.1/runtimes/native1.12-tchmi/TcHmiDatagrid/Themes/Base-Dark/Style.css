@@ -1,0 +1,353 @@
+/** Styles for the theme: Base-Dark */
+.TcHmi_Controls_Beckhoff_TcHmiDatagrid,
+.tchmi-datagrid {
+    --tchmi-background-header: #4794da;
+    --tchmi-color-header: #ffffff;
+    --tchmi-background-row-numbers: #4c6374;
+    --tchmi-color-row-numbers: #ffffff;
+    --tchmi-border-color: #1b1b1f;
+    --tchmi-background-focus: rgba(76, 99, 116, 0.05); /*#4c6374 + opacity*/
+    --tchmi-background-placeholder: #4794da;
+    --tchmi-background-cell: #2b2b2c;
+    --tchmi-color-cell: #ffffff;
+    --tchmi-background-data-scroll: rgba(76, 99, 116, 0.25); /*#4c6374 + opacity*/
+    --tchmi-background-cell-dropdown: linear-gradient(to bottom right, #4994da, #4162b0);
+    --tchmi-background-cell-checkbox: #2A3845;
+    --tchmi-background-cell-checkbox-checked: linear-gradient(to bottom right, #2774ba, #4794da 20%);
+    --tchmi-stroke-combobox: #ffffff;
+    --tchmi-background-combobox-button: linear-gradient(to bottom right, #4994da, #4162b0);
+    --tchmi-background-combobox-button-active: linear-gradient(to top left, #4994da, #4162b0);
+    --tchmi-background-combobox-select: #2A3845;
+    --tchmi-background-combobox-select-active: #2b2b2c;
+    --tchmi-color-combobox: #ffffff;
+    --tchmi-background-textbox: #2A3845;
+    --tchmi-color-textbox: #ffffff;
+    --tchmi-toggleswitch-indicator: #ffffff;
+    --tchmi-button-background: linear-gradient(135deg, #35333d, #141415);
+    --tchmi-button-background-pressed: linear-gradient(135deg, #141415 25%, #2A3845);
+    --tchmi-button-color: #ffffff;
+    --tchmi-button-color-pressed: #a3b0bb;
+    --tchmi-radio-button-background: #2A3845;
+    --tchmi-radio-button-background-checked: radial-gradient(circle closest-side at center, #4794da 0, #4794da 45%, #2A3845 calc(45% + 1px), #2A3845 100%);
+    --tchmi-toggleswitch-background: linear-gradient(to bottom right, #2A3845, #3d5974 70%);
+    --tchmi-toggleswitch-background-checked: linear-gradient(to bottom right, #2774ba, #4794da 40%);
+}
+
+.TcHmi_Controls_Beckhoff_TcHmiDatagrid-template-border,
+.tchmi-datagrid-template-border {
+    border-width: 0px;
+    border-color: #000;
+    border-style: solid;
+}
+
+.TcHmi_Controls_Beckhoff_TcHmiDatagrid-template-header,
+.tchmi-datagrid-template-header {
+    background: var(--tchmi-background-header);
+    color: var(--tchmi-color-header);
+    /* table border **/
+    border-right: 1px solid var(--tchmi-border-color);
+    border-top: 0px;
+    border-left: 0px;
+    border-bottom: 0px;
+    font-weight: normal;
+}
+
+.TcHmi_Controls_Beckhoff_TcHmiDatagrid-template-header-border,
+.tchmi-datagrid-template-header-border {
+    border-color: var(--tchmi-border-color);
+}
+
+.TcHmi_Controls_Beckhoff_TcHmiDatagrid-template-sort-element.sortable .TcHmi_Controls_Beckhoff_TcHmiDatagrid-template-sort-element-child::after,
+.tchmi-datagrid-template-sort-element.sortable .tchmi-datagrid-template-sort-element-child::after {
+    content: url("./Images/sort.svg");
+    padding-left: 5px;
+}
+
+.TcHmi_Controls_Beckhoff_TcHmiDatagrid-template-sort-element.sortable .TcHmi_Controls_Beckhoff_TcHmiDatagrid-template-sort-element-child:empty::after,
+.tchmi-datagrid-template-sort-element.sortable .tchmi-datagrid-template-sort-element-child:empty::after {
+    padding-left: unset;
+}
+
+.TcHmi_Controls_Beckhoff_TcHmiDatagrid-template-sort-element .TcHmi_Controls_Beckhoff_TcHmiDatagrid-template-sort-element-child.TcHmi_Controls_Beckhoff_TcHmiDatagrid-template-header-sort-asc::after,
+.tchmi-datagrid-template-sort-element .tchmi-datagrid-template-sort-element-child.tchmi-datagrid-template-header-sort-asc::after {
+    content: url("./Images/sort_asc.svg");
+}
+
+.TcHmi_Controls_Beckhoff_TcHmiDatagrid-template-sort-element .TcHmi_Controls_Beckhoff_TcHmiDatagrid-template-sort-element-child.TcHmi_Controls_Beckhoff_TcHmiDatagrid-template-header-sort-desc::after,
+.tchmi-datagrid-template-sort-element .tchmi-datagrid-template-sort-element-child.tchmi-datagrid-template-header-sort-desc::after {
+    content: url("./Images/sort_desc.svg");
+}
+
+.TcHmi_Controls_Beckhoff_TcHmiDatagrid-template-placeholder,
+.tchmi-datagrid-template-placeholder {
+    background: var(--tchmi-background-placeholder);
+}
+
+td.TcHmi_Controls_Beckhoff_TcHmiDatagrid-template-row-numbers,
+td.tchmi-datagrid-template-row-numbers {
+    background: var(--tchmi-background-row-numbers);
+    color: var(--tchmi-color-row-numbers);
+    border-color: var(--tchmi-border-color);
+}
+
+.TcHmi_Controls_Beckhoff_TcHmiDatagrid-template-cell,
+.tchmi-datagrid-template-cell {
+    background: var(--tchmi-background-cell);
+    color: var(--tchmi-color-cell);
+    border-color: var(--tchmi-border-color);
+}
+
+    .TcHmi_Controls_Beckhoff_TcHmiDatagrid-template-cell select,
+    .tchmi-datagrid-template-cell select {
+        box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.02), inset 0px 0px 3px 2px rgba(0, 0, 0, 0.3);
+        font-size: inherit;
+        font-style: inherit;
+        font-weight: inherit;
+        color: inherit;
+    }
+
+        .TcHmi_Controls_Beckhoff_TcHmiDatagrid-template-cell select + label,
+        .tchmi-datagrid-template-cell select + label {
+            background: url('Images/dropdown.svg') center center no-repeat, var(--tchmi-background-cell-dropdown);
+        }
+
+    .TcHmi_Controls_Beckhoff_TcHmiDatagrid-template-cell input[type=checkbox] + label,
+    .tchmi-datagrid-template-cell input[type=checkbox] + label {
+        background-color: var(--tchmi-background-cell-checkbox);
+        box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.02), inset 0px 0px 3px 2px rgba(0, 0, 0, 0.3);
+    }
+
+    .TcHmi_Controls_Beckhoff_TcHmiDatagrid-template-cell input[type=checkbox]:checked + label,
+    .tchmi-datagrid-template-cell input[type=checkbox]:checked + label {
+        background: url(Images/checkbox.svg) center / 100% no-repeat, var(--tchmi-background-cell-checkbox-checked);
+    }
+
+    .TcHmi_Controls_Beckhoff_TcHmiDatagrid-template-cell input[type=radio] + label,
+    .tchmi-datagrid-template-cell input[type=radio] + label {
+        background-color: var(--tchmi-radio-button-background);
+        box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.02), inset 0px 0px 3px 2px rgba(0, 0, 0, 0.3);
+    }
+
+    .TcHmi_Controls_Beckhoff_TcHmiDatagrid-template-cell input[type=radio]:checked + label,
+    .tchmi-datagrid-template-cell input[type=radio]:checked + label {
+        background: var(--tchmi-radio-button-background-checked);
+    }
+
+    .TcHmi_Controls_Beckhoff_TcHmiDatagrid-template-cell input[type=checkbox].TcHmi_Controls_Beckhoff_TcHmiDatagrid-toggle-switch + label,
+    .tchmi-datagrid-template-cell input[type=checkbox].TcHmi_Controls_Beckhoff_TcHmiDatagrid-toggle-switch + label {
+        box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.15), inset 0px 0px 3px 2px rgba(0, 0, 0, 0.05);
+    }
+
+    .TcHmi_Controls_Beckhoff_TcHmiDatagrid-template-cell input[type=checkbox]:checked.TcHmi_Controls_Beckhoff_TcHmiDatagrid-toggle-switch + label,
+    .tchmi-datagrid-template-cell input[type=checkbox]:checked.TcHmi_Controls_Beckhoff_TcHmiDatagrid-toggle-switch + label {
+        background: var(--tchmi-toggleswitch-background-checked);
+        box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.15), inset 0px 0px 3px 2px rgba(0, 0, 0, 0.05);
+    }
+
+    .TcHmi_Controls_Beckhoff_TcHmiDatagrid-template-cell input[type=checkbox].TcHmi_Controls_Beckhoff_TcHmiDatagrid-toggle-switch + label div,
+    .tchmi-datagrid-template-cell input[type=checkbox].TcHmi_Controls_Beckhoff_TcHmiDatagrid-toggle-switch + label div {
+        position: relative;
+        background: var(--tchmi-toggleswitch-indicator);
+        border-radius: calc(100% * 0.618);
+        height: calc(100% * 0.618);
+        width: calc(50% * 0.618);
+        top: calc(100% * 0.382 / 2);
+        left: calc(50% * 0.382 / 2);
+        transition: left 0.25s ease;
+        box-shadow: 0px 0px 0px 1px rgba(0,0,0,0.1);
+    }
+
+    .TcHmi_Controls_Beckhoff_TcHmiDatagrid-template-cell input[type=checkbox]:checked.TcHmi_Controls_Beckhoff_TcHmiDatagrid-toggle-switch + label div,
+    .tchmi-datagrid-template-cell input[type=checkbox]:checked.TcHmi_Controls_Beckhoff_TcHmiDatagrid-toggle-switch + label div {
+        left: calc(50% + calc(50% * 0.382 / 2));
+    }
+
+    .TcHmi_Controls_Beckhoff_TcHmiDatagrid-template-cell input[type=text],
+    .TcHmi_Controls_Beckhoff_TcHmiDatagrid-template-cell input[type=text]:disabled,
+    .tchmi-datagrid-template-cell input[type=text],
+    .tchmi-datagrid-template-cell input[type=text]:disabled,
+    .TcHmi_Controls_Beckhoff_TcHmiDatagrid-template-cell input[inputmode=decimal],
+    .TcHmi_Controls_Beckhoff_TcHmiDatagrid-template-cell input[inputmode=decimal]:disabled,
+    .tchmi-datagrid-template-cell input[inputmode=decimal],
+    .tchmi-datagrid-template-cell input[inputmode=decimal]:disabled,
+    .TcHmi_Controls_Beckhoff_TcHmiDatagrid-template-cell input[type=password],
+    .TcHmi_Controls_Beckhoff_TcHmiDatagrid-template-cell input[type=password]:disabled,
+    .tchmi-datagrid-template-cell input[type=password],
+    .tchmi-datagrid-template-cell input[type=password]:disabled {
+        font-family: inherit;
+        font-size: inherit;
+        font-style: inherit;
+        font-weight: inherit;
+        color: var(--tchmi-color-textbox);
+        background-color: var(--tchmi-background-textbox);
+        text-align: inherit;
+        box-shadow: inset 0px 0px 0px 1px rgba(0,0,0,0.02), inset 0px 0px 3px 2px rgba(0,0,0,0.3);
+    }
+
+        .TcHmi_Controls_Beckhoff_TcHmiDatagrid-template-cell input[type=text]:invalid,
+        .TcHmi_Controls_Beckhoff_TcHmiDatagrid-template-cell input[type=text]:disabled:invalid,
+        .tchmi-datagrid-template-cell input[type=text]:invalid,
+        .tchmi-datagrid-template-cell input[type=text]:disabled:invalid,
+        .TcHmi_Controls_Beckhoff_TcHmiDatagrid-template-cell input[inputmode=decimal]:invalid,
+        .TcHmi_Controls_Beckhoff_TcHmiDatagrid-template-cell input[inputmode=decimal]:disabled:invalid,
+        .tchmi-datagrid-template-cell input[inputmode=decimal]:invalid,
+        .tchmi-datagrid-template-cell input[inputmode=decimal]:disabled:invalid {
+            box-shadow: inset 0px 0px 0px 1px rgba(0,0,0,0.02), inset 0px 0px 3px 2px rgba(0,0,0,0.3), inset 0px 0px 7px 3px rgba(255, 0, 0, 0.3);
+        }
+
+.TcHmi_Controls_Beckhoff_TcHmiDatagrid-template-data-scroll tr.focused td:not(.focused)::before,
+.tchmi-datagrid-template-data-scroll tr.focused td:not(.focused)::before {
+    background: var(--tchmi-background-data-scroll);
+}
+
+.TcHmi_Controls_Beckhoff_TcHmiDatagrid-combobox-template-button,
+.tchmi-datagrid-combobox-template-button {
+    background: var(--tchmi-background-combobox-button);
+}
+
+    .TcHmi_Controls_Beckhoff_TcHmiDatagrid-combobox-template-button polyline,
+    .tchmi-datagrid-combobox-template-button polyline {
+        stroke: var(--tchmi-stroke-combobox);
+        fill: none;
+    }
+
+.TcHmi_Controls_Beckhoff_TcHmiDatagrid-combobox-template.active .TcHmi_Controls_Beckhoff_TcHmiDatagrid-combobox-template-button,
+.tchmi-datagrid-combobox-template.active .tchmi-datagrid-combobox-template-button {
+    box-shadow: inset 0px 0px 0px 1px rgba(0,0,0,0.02), inset 0px 0px 3px 2px rgba(0,0,0,0.3);
+    background: var(--tchmi-background-combobox-button-active);
+}
+
+    .TcHmi_Controls_Beckhoff_TcHmiDatagrid-combobox-template.active .TcHmi_Controls_Beckhoff_TcHmiDatagrid-combobox-template-button polyline,
+    .tchmi-datagrid-combobox-template.active .tchmi-datagrid-combobox-template-button polyline {
+        stroke: var(--tchmi-stroke-combobox);
+        fill: none;
+    }
+
+/*--------------------------------------------select--------------------------------------------------*/
+.TcHmi_Controls_Beckhoff_TcHmiDatagrid-combobox-template-select,
+.tchmi-datagrid-combobox-template-select {
+    background: var(--tchmi-background-combobox-select);
+    color: var(--tchmi-color-combobox);
+    box-shadow: inset 0px 0px 0px 1px rgba(0,0,0,0.02), inset 0px 0px 3px 2px rgba(0,0,0,0.3);
+}
+
+.TcHmi_Controls_Beckhoff_TcHmiDatagrid-combobox-template.active .TcHmi_Controls_Beckhoff_TcHmiDatagrid-combobox-template-select,
+.tchmi-datagrid-combobox-template.active .tchmi-datagrid-combobox-template-select {
+    background: var(--tchmi-background-combobox-select-active);
+}
+
+.TcHmi_Controls_Beckhoff_TcHmiDatagrid-combobox-template-select-content,
+.tchmi-datagrid-combobox-template-select-content {
+    color: var(--tchmi-color-combobox);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: normal;
+}
+
+/*-----------------------table--------------------------------------*/
+
+.TcHmi_Controls_Beckhoff_TcHmiDatagrid-combobox-template-dropdown,
+.tchmi-datagrid-combobox-template-dropdown {
+    --tchmi-background-combobox-dropdown: #2b2b2c;
+    --tchmi-background-combobox-dropdown-active: rgba(109, 156, 255, 0.10);
+    --tchmi-background-combobox-dropdown-hover: #4794da;
+    --tchmi-color-combobox-dropdown: #ffffff;
+    --tchmi-color-combobox-dropdown-active: #ffffff;
+    --tchmi-color-combobox-dropdown-hover: #ffffff;
+
+    box-shadow: inset -7px 0px 6px -7px rgba(0,0,0,0.6), inset 7px 0px 6px -7px rgba(0,0,0,0.6), inset 0px -7px 6px -7px rgba(0,0,0,0.6);
+    background: var(--tchmi-background-combobox-dropdown);
+}
+
+    .TcHmi_Controls_Beckhoff_TcHmiDatagrid-combobox-template-dropdown.above-control,
+    .tchmi-datagrid-combobox-template-dropdown.above-control {
+        box-shadow: inset -7px 0px 6px -7px rgba(0,0,0,0.6), inset 7px 0px 6px -7px rgba(0,0,0,0.6), inset 0px 7px 6px -7px rgba(0,0,0,0.6);
+    }
+
+    .TcHmi_Controls_Beckhoff_TcHmiDatagrid-combobox-template-dropdown.drop-down-style-mobile,
+    .tchmi-datagrid-combobox-template-dropdown.drop-down-style-mobile {
+        box-shadow: 0px 0px 6px 1px rgba(0,0,0,0.6);
+        max-width: 60%;
+        max-height: 60%;
+    }
+
+.TcHmi_Controls_Beckhoff_TcHmiDatagrid-combobox-template-dropdown-element,
+.tchmi-datagrid-combobox-template-dropdown-element {
+    color: var(--tchmi-color-combobox-dropdown);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+}
+
+    .TcHmi_Controls_Beckhoff_TcHmiDatagrid-combobox-template-dropdown-element.selected,
+    .tchmi-datagrid-combobox-template-dropdown-element.selected {
+        background: var(--tchmi-background-combobox-dropdown-active);
+        color: var(--tchmi-color-combobox-dropdown-active);
+    }
+
+    .TcHmi_Controls_Beckhoff_TcHmiDatagrid-combobox-template-dropdown-element:hover,
+    .tchmi-datagrid-combobox-template-dropdown-element:hover {
+        background: var(--tchmi-background-combobox-dropdown-hover);
+        color: var(--tchmi-color-combobox-dropdown-hover);
+    }
+
+
+.TcHmi_Controls_Beckhoff_TcHmiDatagrid-button {
+    background: var(--tchmi-button-background);
+    color: var(--tchmi-button-color);
+}
+
+    .TcHmi_Controls_Beckhoff_TcHmiDatagrid-button.down {
+        background: var(--tchmi-button-background-pressed);
+        color: var(--tchmi-button-color-pressed);
+        box-shadow: inset 0px 0px 10px 0px rgba(0,0,0,0.3);
+    }
+
+
+.TcHmi_Controls_Beckhoff_TcHmiDatagrid-date-time-button {
+    background-image: url(Images/datetimepicker_normal.svg), var(--tchmi-background-combobox-button);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+    .TcHmi_Controls_Beckhoff_TcHmiDatagrid-date-time-button.down {
+        background-image: url(Images/datetimepicker_pressed.svg), var(--tchmi-background-combobox-button-active);
+    }
+
+.TcHmi_Controls_Beckhoff_TcHmiDatagrid-timespan-button {
+    background-image: url(Images/timespanpicker_normal.svg), var(--tchmi-background-combobox-button);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+    .TcHmi_Controls_Beckhoff_TcHmiDatagrid-timespan-button.down {
+        background-image: url(Images/timespanpicker_pressed.svg), var(--tchmi-background-combobox-button-active);
+    }
+
+.TcHmi_Controls_Beckhoff_TcHmiDatagrid-button-disabled.down {
+    background: var(--tchmi-button-background);
+    color: var(--tchmi-button-color);
+    box-shadow: none;
+}
+
+.TcHmi_Controls_Beckhoff_TcHmiDatagrid-button-disabled::after,
+.TcHmi_Controls_Beckhoff_TcHmiDatagrid-toggle-switch:disabled ~ label::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+    z-index: 100;
+    cursor: not-allowed;
+}
+
+.TcHmi_Controls_Beckhoff_TcHmiDatagrid-toggle-switch:disabled ~ label::after {
+    top: 0;
+    left: 0;
+}
+
+.TcHmi_Controls_Beckhoff_TcHmiDatagrid-spinbox-input .TcHmi_Controls_Beckhoff_TcHmiDatagrid-button-disabled::after,
+.TcHmi_Controls_Beckhoff_TcHmiDatagrid-date-time-input .TcHmi_Controls_Beckhoff_TcHmiDatagrid-button-disabled::after,
+.TcHmi_Controls_Beckhoff_TcHmiDatagrid-timespan-input .TcHmi_Controls_Beckhoff_TcHmiDatagrid-button-disabled::after {
+    width: var(--row-height);
+}

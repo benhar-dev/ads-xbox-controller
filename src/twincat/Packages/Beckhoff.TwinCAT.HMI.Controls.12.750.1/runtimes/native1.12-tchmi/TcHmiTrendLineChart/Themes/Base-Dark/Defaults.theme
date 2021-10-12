@@ -1,0 +1,77 @@
+{
+  "$schema": "../../../../../TcHmiFramework/Schema/ThemeDescription.Schema.json",
+  "controlTypeValues": {
+    "TcHmi.Controls.Beckhoff.TcHmiTrendLineChart": {
+      "attributes": {
+        "XLabelFontColor": {
+          "color": "#ffffff"
+        },
+        "XAxisColor": {
+          "color": "#ffffff"
+        },
+        "XAxisNameFontColor": {
+          "color": "#ffffff"
+        },
+        "GridBackgroundColor": {
+          "color": "#2b2b2c"
+        },
+        "SubgridLineColor": {
+          "color": "#ffffff"
+        },
+        "GridLineColor": {
+          "color": "#ffffff"
+        }
+      },
+      "themedResources": {
+        "YAxisGenerated": {
+          "id": 1,
+          "position": "Left",
+          "labelFontColor": {
+            "color": "#ffffff"
+          },
+          "showLabels": true,
+          "axisColor": {
+            "color": "#ffffff"
+          },
+          "mainTickMinValue": 0,
+          "mainTickMaxValue": 100,
+          "showAxisName": true,
+          "axisName": "Will be overwritten",
+          "axisNameFontFamily": null,
+          "axisNameFontSize": 15,
+          "axisNameFontSizeUnit": "px",
+          "axisNameFontWeight": "Bold",
+          "axisNameFontColor": {
+            "color": "#ffffff"
+          },
+          "decimalPlaces": 2,
+          "autoScaling": true
+        },
+        "ErrorMarkingColor": {
+          "color": "rgba(255, 0, 0, 0.4)"
+        },
+        "TooltipFontColor": {
+            "color": "#ffffff"
+        },
+        "LineGraphDescriptionLineColor": {
+          "color": "#4794da"
+        },
+        "LineGraphDescriptionPointDotFillColor": {
+          "color": "#4794da"
+        },
+        "LineGraphDescriptionPointDotStrokeColor": {
+          "color": "#4794da"
+        },
+        "YAxisLabelFontColor": {
+          "color": "#ffffff"
+        },
+        "YAxisAxisColor": {
+          "color": "#ffffff"
+        },
+        "YAxisAxisNameFontColor": {
+          "color": "#ffffff"
+        }
+      }
+    }
+  }
+}

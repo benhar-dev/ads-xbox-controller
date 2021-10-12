@@ -1,0 +1,8 @@
+/* Theme depended control css. */
+/* Base-Dark Theme*/
+.TcHmi_Controls_Beckhoff_TcHmiStateImage {
+}
+
+.TcHmi_Controls_Beckhoff_TcHmiStateImage-image {
+    background-size: cover;
+}

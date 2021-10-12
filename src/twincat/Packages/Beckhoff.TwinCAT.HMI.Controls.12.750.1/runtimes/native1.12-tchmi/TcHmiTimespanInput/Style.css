@@ -1,0 +1,80 @@
+/** Styles for all themes */
+
+/* Style for the main element */
+.TcHmi_Controls_Beckhoff_TcHmiTimespanInput {
+    /* Prevent overflow if the border radius is huge */
+    overflow: hidden;
+}
+
+.TcHmi_Controls_Beckhoff_TcHmiTimespanInput-template {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    border-radius: inherit;
+}
+
+.TcHmi_Controls_Beckhoff_TcHmiTimespanInput-template-button {
+    grid-column: 2;
+    grid-row: 1;
+    width: 100%;
+    height: 100%;
+    border-top-right-radius: inherit;
+    border-bottom-right-radius: inherit;
+}
+
+.TcHmi_Controls_Beckhoff_TcHmiTimespanInput-template-input {
+    background: transparent;
+    grid-column: 1;
+    grid-row: 1;
+    font-family: inherit;
+    font-size: inherit;
+    font-style: inherit;
+    font-weight: inherit;
+    text-align: left;
+    white-space: pre;
+    overflow: hidden;
+    position: relative;
+    padding: 2px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    resize: none;
+    cursor: text;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -ms-flex-align: start;
+    -webkit-align-items: flex-start;
+    align-items: flex-start;
+    border-top-left-radius: inherit;
+    border-bottom-left-radius: inherit;
+}
+
+.left .TcHmi_Controls_Beckhoff_TcHmiTimespanInput-template-button {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.left .TcHmi_Controls_Beckhoff_TcHmiTimespanInput-template-input {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+/* The main use for this control is interaction. So mark when this is not allowed. */
+.TcHmi_Controls_Beckhoff_TcHmiTimespanInput.TcHmi_Controls_System_TcHmiControl-operate-disallowed::after {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+    z-index: 100;
+    cursor: not-allowed;
+}

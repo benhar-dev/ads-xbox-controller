@@ -1,0 +1,22 @@
+{
+    "$schema": "../../../../TcHmiServer/TcHmiSrv/schema/Language.Schema.json",
+    "locale": "en",
+    "localizedText": {
+        "State": "{0} State ({1}): {2}",
+        "InvalidRuntime": "No runtime with name '{0}' configured.",
+        "InvalidRouter": "The TwinCAT Router is in invalid state. No port could be opened.",
+        "InvalidSymbol": "The requested symbol is not available.",
+        "InvalidParameter": "A parameter of the requested function is invalid.",
+        "InvalidTwinCATVersion": "TwinCAT version invalid.",
+        "ConfigDirectory": "TwinCAT configuration directory not found.",
+        "ParseBaseTypes": "Error while parsing ADS base types.",
+        "ParseAdsDate": "Error while parsing ADS data.",
+        "InvalidData": "Invalid data written to server or an ADS datatype can not be parsed.",
+        "MissingParameter": "A parameter is missing in the requested function.",
+        "RuntimeDisabled": "The requested runtime '{0}' is disabled in the HMI configuration.",
+        "MissingCommands": "Missing commands in response from server with id: '{0}'.",
+        "MissingResponse": "Missing response from server.",
+        "SubscriptionFailed": "Subscription to the symbol '{0}.AdsSyncReadStateReq' failed.",
+        "ErrorPlaceholder": "Error: {0}"
+    }
+}

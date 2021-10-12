@@ -1,0 +1,38 @@
+﻿{
+  "controlTypeValues": {},
+  "controlClassValues": {
+    "IsActiveLabel": {
+      "attributes": {
+        "BackgroundColor": {
+          "color": "rgba(9, 235, 27, 1)"
+        }
+      },
+      "themedResources": {}
+    },
+    "IsActiveShape": {
+      "attributes": {
+        "FillColor": {
+          "color": "rgba(9, 235, 27, 1)"
+        }
+      },
+      "themedResources": {}
+    },
+    "IsNotActiveLabel": {
+      "attributes": {
+        "BackgroundColor": {
+          "color": "rgba(195, 195, 195, 1)"
+        }
+      },
+      "themedResources": {}
+    },
+    "IsNotActiveShape": {
+      "attributes": {
+        "FillColor": {
+          "color": "rgba(195, 195, 195, 1)"
+        }
+      },
+      "themedResources": {}
+    }
+  },
+  "$schema": "./../../../Packages/Beckhoff.TwinCAT.HMI.Framework.12.750.1/runtimes/native1.12-tchmi/Schema/ThemeDescription.Schema.json"
+}

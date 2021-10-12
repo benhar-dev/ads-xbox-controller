@@ -1,0 +1,24 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema",
+    "definitions": {
+        "TcHmi.Controls.Beckhoff.TcHmiTimespanInput": {
+            "$schema": "http://json-schema.org/draft-04/schema",
+            "type": "object",
+            "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
+            "frameworkControlType": "TcHmiTimespanInput",
+            "frameworkControlNamespace": "TcHmi.Controls.Beckhoff"
+        },
+        "TcHmiTimespanInput": {
+            "$ref": "tchmi:framework#/definitions/TcHmi.Controls.Beckhoff.TcHmiTimespanInput"
+        },
+        "TcHmi.Controls.Beckhoff.TcHmiTimespanInput.ButtonPosition": {
+            "title": "DateTimeInputButtonPosition",
+            "type": "string",
+            "enum": [
+                "Left",
+                "Right"
+            ],
+            "default": "Right"
+        }
+    }
+}

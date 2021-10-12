@@ -1,0 +1,23 @@
+{
+    "$schema": "../../../../TcHmiServer/TcHmiSrv/schema/Language.Schema.json",
+    "locale": "en",
+    "localizedText": {
+        "Label_Start": "Start:",
+        "Combobox_Tooltip_Start": "Datetime, Timespan or First",
+        "Combobox_Data_Start": "First",
+        "Button_Tooltip_Start_Timespan": "Choose Timespan for start",
+        "Button_Tooltip_Start_Datetime": "Choose Datetime for start",
+        "Label_End": "End:",
+        "Combobox_Tooltip_End": "Datetime, Timespan or Latest",
+        "Combobox_Data_End": "Latest",
+        "Button_Tooltip_End_Timespan": "Choose Timespan for end",
+        "Button_Tooltip_End_Datetime": "Choose Datetime for end",
+        "Button_Tooltip_Play": "Play",
+        "Button_Tooltip_Pause": "Pause",
+        "Button_Tooltip_PanX": "Pan only horizontally",
+        "Button_Tooltip_PanXY": "Pan horizontally and vertically",
+        "Button_Tooltip_ZoomX": "Zoom only the horizontal axis",
+        "Button_Tooltip_ZoomXY": "Zoom both the horizontal and the vertical axis",
+        "Button_Tooltip_ResetZoomPan": "Reset zooming and panning"
+    }
+}

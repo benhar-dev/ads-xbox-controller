@@ -1,0 +1,13 @@
+/* General theme independed control css. */
+.TcHmi_Controls_Beckhoff_TcHmiAdsState {
+    display: block;
+}
+
+.TcHmi_Controls_Beckhoff_TcHmiAdsState-template {
+    height: 100%;
+    width: 100%;
+    background-size: contain;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    border-radius: inherit;
+}

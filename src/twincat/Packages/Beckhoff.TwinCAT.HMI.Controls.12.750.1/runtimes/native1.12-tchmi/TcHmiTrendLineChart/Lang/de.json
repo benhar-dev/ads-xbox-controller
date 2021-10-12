@@ -1,0 +1,23 @@
+{
+    "$schema": "../../../../TcHmiServer/TcHmiSrv/schema/Language.Schema.json",
+    "locale": "de",
+    "localizedText": {
+        "Label_Start": "Start:",
+        "Combobox_Tooltip_Start": "Zeitpunkt, Zeitspanne oder erster Datenpunkt",
+        "Combobox_Data_Start": "Erster Datenpunkt",
+        "Button_Tooltip_Start_Timespan": "Zeitspanne für Start wählen",
+        "Button_Tooltip_Start_Datetime": "Zeitpunkt für Start wählen",
+        "Label_End": "Ende:",
+        "Combobox_Tooltip_End": "Zeitpunkt, Zeitspanne oder letzter Datenpunkt",
+        "Combobox_Data_End": "Letzter Datenpunkt",
+        "Button_Tooltip_End_Timespan": "Zeitspanne für Ende wählen",
+        "Button_Tooltip_End_Datetime": "Zeitpunkt für Ende wählen",
+        "Button_Tooltip_Play": "Start",
+        "Button_Tooltip_Pause": "Pause",
+        "Button_Tooltip_PanX": "Ansicht nur horizontal verschieben",
+        "Button_Tooltip_PanXY": "Ansicht sowohl horizontal als auch vertikal verschieben",
+        "Button_Tooltip_ZoomX": "Nur die horizontale Achse zoomen",
+        "Button_Tooltip_ZoomXY": "Sowohl die horizontal als auch die vertikale Achse zoomen",
+        "Button_Tooltip_ResetZoomPan": "Ansicht und Zoom zurücksetzen"
+    }
+}

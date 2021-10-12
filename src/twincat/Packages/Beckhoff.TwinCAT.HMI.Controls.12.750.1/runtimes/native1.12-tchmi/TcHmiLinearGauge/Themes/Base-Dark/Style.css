@@ -1,0 +1,75 @@
+/** Styles for the theme: Base-Dark */
+
+/* Style for the main element */
+.TcHmi_Controls_Beckhoff_TcHmiLinearGauge,
+.tchmi-linear-gauge {
+    --tchmi-background: #1b1b1f;
+    --tchmi-label-color: #ffffff;
+    --tchmi-description-color: #ffffff;
+    --tchmi-tick-background: #ffffff;
+    --tchmi-filler-background: #4993DA;
+    --tchmi-track-background: #2A3845;
+    --tchmi-set-point: #4c6374;
+    background-color: var(--tchmi-background);
+}
+
+.TcHmi_Controls_Beckhoff_TcHmiLinearGauge-template-labels,
+.tchmi-linear-gauge-template-labels {
+    color: var(--tchmi-label-color);
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.TcHmi_Controls_Beckhoff_TcHmiLinearGauge-template-tick,
+.tchmi-linear-gauge-template-tick {
+    background-color: var(--tchmi-tick-background);
+}
+
+.TcHmi_Controls_Beckhoff_TcHmiLinearGauge-template-track,
+.tchmi-linear-gauge-template-track {
+    background-color: var(--tchmi-track-background);
+}
+
+.TcHmi_Controls_Beckhoff_TcHmiLinearGauge-template-filler,
+.tchmi-linear-gauge-template-filler {
+    background-color: var(--tchmi-filler-background);
+}
+
+.TcHmi_Controls_Beckhoff_TcHmiLinearGauge-template-description,
+.tchmi-linear-gauge-template-description {
+    color: var(--tchmi-description-color);
+    font-size: 14px;
+}
+
+/* Overrides for vertical orientation*/
+.TcHmi_Controls_Beckhoff_TcHmiLinearGauge.vertical .TcHmi_Controls_Beckhoff_TcHmiLinearGauge-template-filler,
+.tchmi-linear-gauge.vertical .tchmi-linear-gauge-template-filler {
+    background-color: var(--tchmi-filler-background);
+}
+
+
+.TcHmi_Controls_Beckhoff_TcHmiLinearGauge-template-set-point {
+    position: absolute;
+    background: var(--tchmi-set-point);
+    height: calc(100% + 32px);
+    top: -16px;
+    width: 2px;
+    transform: translate(-1px, 0);
+}
+
+    .TcHmi_Controls_Beckhoff_TcHmiLinearGauge-template-set-point.vertical-setpoint {
+        position: absolute;
+        width: calc(100% + 32px);
+        top: auto;
+        left: -16px;
+        height: 2px;
+        transform: translate(0, 1px);
+    }
+
+    .TcHmi_Controls_Beckhoff_TcHmiLinearGauge-template-set-point.inverted-setpoint {
+        transform: translate(1px, 0);
+    }
+
+    .TcHmi_Controls_Beckhoff_TcHmiLinearGauge-template-set-point.vertical-setpoint.inverted-setpoint {
+        transform: translate(0, -1px);
+    }

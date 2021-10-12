@@ -1,0 +1,10 @@
+/** Styles for theme: Base */
+
+/* Mark disabled controls without interupting control logic */
+.TcHmi_Controls_System_TcHmiControl-disabled::after, .tchmi-control-disabled::after {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.tchmi-system-topmostlayer-container.tchmi-topmostlayer-background-dim {
+    background-color: rgba(0, 0, 0, 0.5);
+}

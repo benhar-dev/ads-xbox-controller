@@ -1,0 +1,19 @@
+/** Styles for the theme: Base-Dark */
+.TcHmi_Controls_Beckhoff_TcHmiRadioButton {
+    --tchmi-background: #2A3845;
+    --tchmi-background-checked: radial-gradient(circle closest-side at center, #4794da 0, #4794da 45%, #2A3845 calc(45% + 1px), #2A3845 100%);
+    --tchmi-color: white;
+    color: var(--tchmi-color);
+}
+
+/* Style for the main element */
+.TcHmi_Controls_Beckhoff_TcHmiRadioButton-template {
+    background-color: var(--tchmi-background);
+    box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.2), inset 0px 0px 3px 2px rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+}
+
+/* class TcHmi_Controls_Beckhoff_TcHmiRadioButton-active will be set/unset in the control */
+.TcHmi_Controls_Beckhoff_TcHmiRadioButton.TcHmi_Controls_Beckhoff_TcHmiRadioButton-active .TcHmi_Controls_Beckhoff_TcHmiRadioButton-template {
+    background: var(--tchmi-background-checked);
+}

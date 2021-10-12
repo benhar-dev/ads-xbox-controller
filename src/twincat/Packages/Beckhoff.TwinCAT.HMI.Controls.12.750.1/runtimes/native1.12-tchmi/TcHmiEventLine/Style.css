@@ -1,0 +1,31 @@
+/* General theme independed control css. */
+.TcHmi_Controls_Beckhoff_TcHmiEventLine {
+    overflow: hidden;
+}
+
+.TcHmi_Controls_Beckhoff_TcHmiEventLine-Template {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.TcHmi_Controls_Beckhoff_TcHmiEventLine-Icon {
+    height: 100%;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+.TcHmi_Controls_Beckhoff_TcHmiEventLine-Message {
+    height: auto;
+    flex-grow: 1;
+    flex-shrink: 1;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.TcHmi_Controls_Beckhoff_TcHmiEventLine-Button {
+    height: 100%;
+    right: 0;
+    flex-grow: 0;
+    flex-shrink: 0;
+}

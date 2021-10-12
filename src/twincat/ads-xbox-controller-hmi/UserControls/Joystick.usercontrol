@@ -1,0 +1,96 @@
+﻿<div id="Joystick" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControl" data-tchmi-top="0" data-tchmi-left="0" data-tchmi-width="120" data-tchmi-height="120" data-tchmi-width-unit="px" data-tchmi-height-unit="px" data-tchmi-creator-viewport-width="500" data-tchmi-creator-viewport-height="500" data-tchmi-left-unit="px" data-tchmi-top-unit="px" data-tchmi-right-unit="px" data-tchmi-bottom-unit="px" data-tchmi-max-width-unit="px" data-tchmi-max-height-unit="px" data-tchmi-min-width-unit="px" data-tchmi-min-height-unit="px">
+<div id="TcHmiEllipse_LefttJoystickBase_1" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiEllipse" data-tchmi-height-unit="px" data-tchmi-left="10" data-tchmi-left-unit="px" data-tchmi-top="10" data-tchmi-top-unit="px" data-tchmi-width-unit="px" data-tchmi-max-width-unit="px" data-tchmi-max-height-unit="px" data-tchmi-min-width-unit="px" data-tchmi-min-height-unit="px" data-tchmi-opacity="1" data-tchmi-right-unit="px" data-tchmi-bottom-unit="px" data-tchmi-stroke-thickness-unit="px" data-tchmi-stroke-thickness="2" data-tchmi-width="100" data-tchmi-height="100">
+<script data-tchmi-target-attribute="data-tchmi-fill-color" type="application/json">
+                {
+                "color": "rgba(255, 255, 255, 1)"
+                }
+            </script>
+
+
+        </div>
+<div id="TcHmiEllipse_JoystickTop" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiEllipse" data-tchmi-height-unit="px" data-tchmi-top="35" data-tchmi-top-unit="px" data-tchmi-width-unit="px" data-tchmi-max-width-unit="px" data-tchmi-max-height-unit="px" data-tchmi-min-width-unit="px" data-tchmi-min-height-unit="px" data-tchmi-opacity="1" data-tchmi-right-unit="px" data-tchmi-bottom-unit="px" data-tchmi-stroke-thickness-unit="px" data-tchmi-stroke-thickness="2" data-tchmi-width="50" data-tchmi-height="50" data-tchmi-left="35" data-tchmi-left-unit="px" data-tchmi-background-image-width-unit="px" data-tchmi-background-image-height-unit="px">
+
+
+
+
+            <script data-tchmi-target-attribute="data-tchmi-transform" type="application/json">
+[
+  {
+    "transformType": "Translate",
+    "x": "%f%30 * %pp%rawX%/pp% / 32767%/f%",
+    "y": "%f%-30 * %pp%rawY%/pp% / 32767%/f%",
+    "z": 0,
+    "xUnit": "px",
+    "zUnit": "px"
+  }
+]
+</script>
+        
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+[
+  {
+    "event": "%pp%button%/pp%",
+    "actions": [
+      {
+        "objectType": "Condition",
+        "active": true,
+        "parts": [
+          {
+            "if": [
+              {
+                "compare1": {
+                  "objectType": "Symbol",
+                  "valueType": "tchmi:general#/definitions/BOOL",
+                  "symbolExpression": "%pp%button%/pp%"
+                },
+                "compare2": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:general#/definitions/BOOL",
+                  "value": true
+                },
+                "compareOperator": "==",
+                "logic": null
+              }
+            ],
+            "then": [
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%TcHmiEllipse_JoystickTop::ClassNames%/ctrl%",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:framework#/definitions/ClassNameList",
+                  "value": [
+                    "IsActiveShape"
+                  ]
+                },
+                "asyncWait": true
+              }
+            ]
+          },
+          {
+            "else": [
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%TcHmiEllipse_JoystickTop::ClassNames%/ctrl%",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:framework#/definitions/ClassNameList",
+                  "value": [
+                    "IsNotActiveShape"
+                  ]
+                },
+                "asyncWait": true
+              }
+            ]
+          }
+        ],
+        "asyncWait": true
+      }
+    ]
+  }
+]
+</script>
+</div>
+</div>

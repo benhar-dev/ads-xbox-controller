@@ -1,0 +1,7 @@
+/* Theme independent styles*/
+.TcHmi_Controls_Beckhoff_TcHmiLocalizationSelect-template {
+    border-radius: inherit;
+}
+    .TcHmi_Controls_Beckhoff_TcHmiLocalizationSelect-template .TcHmi_Controls_Beckhoff_TcHmiCombobox {
+        border-radius: inherit;
+    }

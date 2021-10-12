@@ -1,0 +1,8 @@
+{
+    "$schema": "../../../../TcHmiServer/TcHmiSrv/schema/Language.Schema.json",
+    "locale": "de",
+    "localizedText": {
+        "NoEventsReceived": "Es wurden keine Ereignisse empfangen.",
+        "Browser_Console_Could_Have_More_Information": "Es trat ein Fehler auf während das letzte Ereignis empfangen wurde. Die Browser-Konsole könnte weitere Hinweise enthalten."
+    }
+}

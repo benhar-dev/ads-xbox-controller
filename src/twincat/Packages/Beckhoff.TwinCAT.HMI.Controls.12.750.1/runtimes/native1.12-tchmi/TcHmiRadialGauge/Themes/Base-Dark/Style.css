@@ -1,0 +1,61 @@
+/** Styles for the theme: Base-Dark */
+.TcHmi_Controls_Beckhoff_TcHmiRadialGauge,
+.tchmi-radial-gauge {
+    --tchmi-background: #1b1b1f;
+    --tchmi-tick-stroke: #ffffff;
+    --tchmi-label-fill: #ffffff;
+    --tchmi-track-color: #2A3845;
+    --tchmi-filler-color: #4794da;
+    --tchmi-unit-color: #ffffff;
+    --tchmi-set-point: #4c6374;
+}
+.TcHmi_Controls_Beckhoff_TcHmiRadialGauge-template-circle-outside,
+.tchmi-radial-gauge-template-circle-outside {
+    fill: var(--tchmi-background);
+}
+
+.TcHmi_Controls_Beckhoff_TcHmiRadialGauge-template-main-tick,
+.TcHmi_Controls_Beckhoff_TcHmiRadialGauge-template-sub-tick,
+.tchmi-radial-gauge-template-main-tick,
+.tchmi-radial-gauge-template-sub-tick {
+    stroke: var(--tchmi-tick-stroke);
+    stroke-width: 2;
+    pointer-events: none;
+}
+
+
+.TcHmi_Controls_Beckhoff_TcHmiRadialGauge-template-label,
+.tchmi-radial-gauge-template-label {
+    font-size: 12px;
+    fill: var(--tchmi-label-fill);
+    font-weight: bold;
+}
+
+.TcHmi_Controls_Beckhoff_TcHmiRadialGauge-template-circle-under,
+.tchmi-radial-gauge-template-circle-under {
+    stroke-width: 9px;
+    stroke-dasharray: 741.5px;
+    stroke-dashoffset: 206px;
+    stroke: var(--tchmi-track-color);
+    fill: transparent;
+}
+
+.TcHmi_Controls_Beckhoff_TcHmiRadialGauge-template-circle-over,
+.tchmi-radial-gauge-template-circle-over {
+    stroke-width: 9px;
+    stroke-dasharray: 741.5px;
+    stroke-dashoffset: 206px;
+    stroke: var(--tchmi-filler-color);
+    fill: transparent;
+}
+
+.TcHmi_Controls_Beckhoff_TcHmiRadialGauge-template-display-value, .TcHmi_Controls_Beckhoff_TcHmiRadialGauge-template-display-unit,
+.tchmi-radial-gauge-template-display-value, .tchmi-radial-gauge-template-display-unit {
+    fill: var(--tchmi-unit-color);
+}
+
+.TcHmi_Controls_Beckhoff_TcHmiRadialGauge-template-set-point {
+    stroke: var(--tchmi-set-point);
+    stroke-width: 2;
+    pointer-events: none;
+}
