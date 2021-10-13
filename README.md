@@ -36,6 +36,6 @@ Please visit http://beckhoff.com.au/ for further guides
 * [TensorKart](https://github.com/kevinhughes27/TensorKart) - Code snippet for the controller
 
 ## Other examples
-Below is a list of other community related TwinCAT / Controller repos
+Below is a list of other community made TwinCAT / Controller repos
 
 [TcXboxController](https://github.com/sondretordal/TcXboxController) by [sondretordal](https://github.com/sondretordal)
