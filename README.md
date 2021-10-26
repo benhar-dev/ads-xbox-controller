@@ -38,4 +38,6 @@ Please visit http://beckhoff.com.au/ for further guides
 ## Other examples
 Below is a list of other community made TwinCAT / Controller repos
 
-[TcXboxController](https://github.com/sondretordal/TcXboxController) by [sondretordal](https://github.com/sondretordal)
+* [TcXboxController](https://github.com/sondretordal/TcXboxController) by [sondretordal](https://github.com/sondretordal)
+* [TcJoy](https://github.com/evanmj/TcJoy) by [evanmj](https://github.com/evanmj)
+
