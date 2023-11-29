@@ -23,6 +23,9 @@ First start the PLC project running.  Next run the python script on the same IPC
 ## Screenshot
 ![image](./docs/Images/Demo.gif)
 
+## Wireless Bluetooth Connection
+There has been reported success with using the TP Link UB500 Bluetooth Adapter on IPCs running Windows 10 LSTC 2021. (not LSTC 2019!).  Please feel free to submit further compatible Bluetooth dongle part numbers to include them here. 
+
 ## Versions
 * TcXaeShell 3.1.4024.20
 * TE2000 1.12.750.1
